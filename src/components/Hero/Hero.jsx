@@ -79,14 +79,13 @@ const Hero = () => {
 
             <div className="hero-content-left-social-media">
               <h5 className="hero-content-left-social-media-title">Follow Me:</h5>
-              <a href="https://www.linkedin.com/in/muhammed-said-elsalih-b6066b26b/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-              <a href="https://www.github.com/muhammed-said-elsalih" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-              <a href="https://www.leetcode.com/muhammed-said-elsalih" target="_blank" rel="noopener noreferrer"><SiLeetcode /></a>
-              <a href="https://www.tiktok.com/muhammed-said-elsalih" target="_blank" rel="noopener noreferrer"><FaMedium /></a>
-              <a href="https://www.instagram.com/muhammed-said-elsalih" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-              <a href="https://www.twitter.com/muhammed-said-elsalih" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
-              <a href="https://www.facebook.com/muhammed-said-elsalih" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
-              <a href="https://www.youtube.com/muhammed-said-elsalih" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
+              <a href="https://www.linkedin.com/in/muhammed-said-elsalih-a76b65284/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a href="https://github.com/MuhammetSaid" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+              <a href="https://leetcode.com/u/Muhammet_said/" target="_blank" rel="noopener noreferrer"><SiLeetcode /></a>
+              <a href="https://medium.com/@muhammetsaidelsalih" target="_blank" rel="noopener noreferrer"><FaMedium /></a>
+              <a href="https://www.instagram.com/muhamet_said_elsalih?igsh=eHIzc2U0ZmJyZWIw" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+              <a href="https://www.facebook.com/share/1AV4voSCXm/" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
+              <a href="/" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
             </div>
           </div>
           <div className="hero-content-right">

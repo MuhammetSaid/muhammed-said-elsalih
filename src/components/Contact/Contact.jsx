@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './Contact.css'
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub, FaInstagram, FaTwitter } from 'react-icons/fa'
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub, FaInstagram, FaTwitter, FaFacebook } from 'react-icons/fa'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -47,7 +47,7 @@ const Contact = () => {
               </div>
               <div className="contact-info-details">
                 <h3>Email</h3>
-                <p>muhammedsaid@example.com</p>
+                <p>muhammedsaidelsalih@gmail.com</p>
               </div>
             </div>
 
@@ -57,7 +57,7 @@ const Contact = () => {
               </div>
               <div className="contact-info-details">
                 <h3>Phone</h3>
-                <p>+90 555 123 4567</p>
+                <p>+90 537 060 66 07</p>
               </div>
             </div>
 
@@ -74,17 +74,17 @@ const Contact = () => {
             <div className="contact-social-wrapper">
               <h3 className="social-title">Follow Me: </h3>
               <div className="contact-social">
-                <a href="#" className="social-link" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/muhammed-said-elsalih-a76b65284/" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="LinkedIn">
                   <FaLinkedin />
                 </a>
-                <a href="#" className="social-link" aria-label="GitHub">
+                <a href="https://github.com/MuhammetSaid" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="GitHub">
                   <FaGithub />
                 </a>
-                <a href="#" className="social-link" aria-label="Instagram">
+                <a href="https://www.instagram.com/muhamet_said_elsalih?igsh=eHIzc2U0ZmJyZWIw" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Instagram">
                   <FaInstagram />
                 </a>
-                <a href="#" className="social-link" aria-label="Twitter">
-                  <FaTwitter />
+                <a href="https://www.facebook.com/share/1AV4voSCXm/" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Facebook">
+                  <FaFacebook />
                 </a>
               </div>
             </div>

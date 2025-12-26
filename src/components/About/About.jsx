@@ -54,22 +54,26 @@ const About = () => {
                 <div className="timeline-dot"></div>
                 <div className="timeline-content">
                   <div className="timeline-header">
-                    <h3 className="timeline-title">Job Title</h3>
-                    <span className="timeline-date">2023 - Present</span>
+                    <h3 className="timeline-title">Software Developer Volunteer Intern</h3>
+                    <span className="timeline-date">2024 - Present</span>
                   </div>
-                  <p className="timeline-institution">Company Name</p>
-                  <p className="timeline-description">Brief description of your role, responsibilities, and key achievements in this position.</p>
+                  <p className="timeline-institution">Aiksir Yazılım, Malatya</p>
+                  <p className="timeline-description">
+                    Developed an AI-integrated customizable customer service chatbot assistant, enabling users to easily customize the chatbot system based on their own data through seamless integration. Additionally, created an AI-powered mobile application that provides answers to Islamic religious questions by analyzing Quran, tafsir, and fiqh sources to generate accurate and customizable responses.
+                  </p>
                 </div>
               </div>
               <div className="timeline-item">
                 <div className="timeline-dot"></div>
                 <div className="timeline-content">
                   <div className="timeline-header">
-                    <h3 className="timeline-title">Job Title</h3>
-                    <span className="timeline-date">2021 - 2023</span>
+                    <h3 className="timeline-title">Computer Engineering Intern</h3>
+                    <span className="timeline-date">July 2024 - August 2024</span>
                   </div>
-                  <p className="timeline-institution">Company Name</p>
-                  <p className="timeline-description">Brief description of your role, responsibilities, and key achievements in this position.</p>
+                  <p className="timeline-institution">Baştürk Cam Sanayi ve Ticaret, Malatya</p>
+                  <p className="timeline-description">
+                    Developed a web-based warehouse management system that streamlined inventory tracking and stock management, significantly improving operational efficiency for warehouse personnel.
+                  </p>
                 </div>
               </div>
             </div>

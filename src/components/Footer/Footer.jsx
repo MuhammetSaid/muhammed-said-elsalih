@@ -28,7 +28,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-content">
           <div className="footer-section footer-about">
-            <h3 className="footer-title">Muhammed Said</h3>
+            <h3 className="footer-title">Muhammed Said Elsalih</h3>
             <p className="footer-description">
               Full Stack Developer & Gen AI Developer passionate about creating exceptional digital experiences.
             </p>
@@ -83,14 +83,14 @@ const Footer = () => {
             <h4 className="footer-section-title">Get In Touch</h4>
             <div className="footer-contact-item">
               <FaEnvelope className="footer-contact-icon" />
-              <a href="mailto:muhammedsaid@example.com" className="footer-contact-link">
-                muhammedsaid@example.com
+              <a href="mailto:muhammedsaidelsalih@gmail.com" className="footer-contact-link">
+                muhammedsaidelsalih@gmail.com
               </a>
             </div>
             <div className="footer-contact-item">
               <FaGithub className="footer-contact-icon" />
-              <a href="#" className="footer-contact-link">
-                github.com/username
+              <a href="https://github.com/MuhammetSaid" target="_blank" rel="noopener noreferrer" className="footer-contact-link">
+                github.com/MuhammetSaid
               </a>
             </div>
           </div>
@@ -101,7 +101,7 @@ const Footer = () => {
           <div className="footer-copyright">
             <p>&copy; {currentYear} Muhammed Said. All rights reserved.</p>
             <p className="footer-made-with">
-              Made with <span className="footer-heart">❤️</span> using React
+              Powered by <span className="footer-heart">Muhammed Said</span> using React
             </p>
           </div>
         </div>
