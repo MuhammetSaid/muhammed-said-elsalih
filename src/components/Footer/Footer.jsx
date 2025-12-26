@@ -33,17 +33,17 @@ const Footer = () => {
               Full Stack Developer & Gen AI Developer passionate about creating exceptional digital experiences.
             </p>
             <div className="footer-social">
-              <a href="#" className="footer-social-link" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/muhammed-said-elsalih-a76b65284/" target="_blank" rel="noopener noreferrer" className="footer-social-link" aria-label="LinkedIn">
                 <FaLinkedin />
               </a>
-              <a href="#" className="footer-social-link" aria-label="GitHub">
+              <a href="https://github.com/MuhammetSaid" target="_blank" rel="noopener noreferrer" className="footer-social-link" aria-label="GitHub">
                 <FaGithub />
               </a>
-              <a href="#" className="footer-social-link" aria-label="Instagram">
+              <a href="https://www.instagram.com/muhamet_said_elsalih?igsh=eHIzc2U0ZmJyZWIw" target="_blank" rel="noopener noreferrer" className="footer-social-link" aria-label="Instagram">
                 <FaInstagram />
               </a>
-              <a href="#" className="footer-social-link" aria-label="Twitter">
-                <FaTwitter />
+              <a href="https://www.facebook.com/share/1AV4voSCXm/" target="_blank" rel="noopener noreferrer" className="footer-social-link" aria-label="Facebook">
+                <FaFacebook />
               </a>
             </div>
           </div>
