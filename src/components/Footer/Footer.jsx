@@ -1,5 +1,5 @@
 import './Footer.css'
-import { FaLinkedin, FaGithub, FaInstagram, FaTwitter, FaEnvelope } from 'react-icons/fa'
+import { FaLinkedin, FaGithub, FaInstagram, FaTwitter, FaEnvelope, FaFacebook } from 'react-icons/fa'
 import { NavLink } from 'react-router-dom'
 import { scrollToSection } from '../../utils/scrollToSection'
 import { useNavigate, useLocation } from 'react-router-dom'
