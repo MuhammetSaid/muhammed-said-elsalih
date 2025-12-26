@@ -1,0 +1,220 @@
+.header {
+    width: 570px;
+    max-width: 750px;
+    min-width: 300px;
+    height: 7vh;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 0 0px 8px 0 var(--shadow-color), 0 0px 8px 0 var(--shadow-color);
+    margin-top: 2.2rem;
+    position: fixed;
+    background-color: var(--bg-color) !important;
+    z-index: 1000;
+}
+
+.header-container {
+    width: 95%;
+    height: 5vh;
+    min-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bg-color) !important;
+    align-items: center;
+    padding: 0 0.6rem;
+    gap: 0.4rem;
+    position: relative;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.header-container a {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: .3rem .5rem;
+    border-radius: 30px;
+    font-size: .8rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.header-container a:hover {
+    background-color: var(--primary-color);
+    color: var(--bg-color) !important;
+    transition: all 0.3s ease;
+}
+
+.header-container a .icon {
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.menu-toggle {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--primary-op-color);
+    color: var(--primary-color);
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.menu-toggle:hover {
+    background-color: var(--primary-op-color);
+    transform: scale(1.1);
+}
+
+/* Responsive düzenlemeler */
+@media (max-width: 1200px) {
+    .header {
+        width: 50%;
+        min-width: 300px;
+    }
+    
+    .header-container a {
+        font-size: 0.75rem;
+        padding: .3rem .45rem;
+        gap: .25rem;
+    }
+    
+    .header-container a .icon {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header {
+        width: 70%;
+        min-width: 280px;
+    }
+    
+    .header-container {
+        padding: 0 0.5rem;
+        gap: 0.3rem;
+    }
+    
+    .header-nav {
+        gap: 0.15rem;
+    }
+    
+    .header-container a {
+        font-size: 0.7rem;
+        padding: .3rem .4rem;
+        gap: .2rem;
+    }
+    
+    .header-container a .icon {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .header {
+        width: 85%;
+        min-width: 250px;
+    }
+    
+    .menu-toggle {
+        display: flex;
+    }
+
+    .header-nav {
+        display: none;
+        position: absolute;
+        top: calc(100% + 10px);
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background-color: var(--bg-color);
+        border-radius: 20px;
+        padding: 1rem;
+        box-shadow: 0 5px 20px var(--shadow-color);
+        gap: 0.5rem;
+        z-index: 1001;
+    }
+
+    .header-nav-open {
+        display: flex;
+    }
+    
+    .header-container a {
+        font-size: 0.9rem;
+        padding: .5rem 1rem;
+        width: 100%;
+        justify-content: flex-start;
+        gap: .4rem;
+    }
+    
+    .header-container a .icon {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        width: 90%;
+        min-width: 250px;
+        height: auto;
+        min-height: 50px;
+        padding: 0.5rem 0;
+        margin-top: 0.5rem;
+    }
+    
+    .header-container {
+        justify-content: space-between;
+        gap: 0.5rem;
+        height: auto;
+        padding: 0 0.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        width: 95%;
+        min-width: 200px;
+        margin-top: 0.5rem;
+    }
+    
+    .header-container {
+        gap: 0.5rem;
+    }
+
+    .menu-toggle {
+        width: 35px;
+        height: 35px;
+        min-width: 35px;
+        min-height: 35px;
+        font-size: 1.3rem;
+    }
+    
+    .header-container a {
+        font-size: 0.85rem;
+        padding: .5rem .8rem;
+        gap: .4rem;
+    }
+    
+    .header-container a .icon {
+        font-size: 1.1rem;
+    }
+}
+

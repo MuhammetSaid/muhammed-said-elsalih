@@ -1,0 +1,84 @@
+import './About.css'
+import { MdSchool } from 'react-icons/md'
+import { MdWork } from 'react-icons/md'
+
+const About = () => {
+  return (
+    <section id="about" className="about">
+      <div className="about-container">
+        <div className="about-header">
+          <p className="about-header-label">ABOUT ME</p>
+        </div>
+        
+        <div className="about-content">
+          <div className="about-content-left">
+            <h1 className="about-content-left-title">Building Exceptional User Experiences</h1>
+            <p className="about-content-left-bio">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id error, a aspernatur officia provident perferendis saepe nisi quae et nam repellendus laboriosam quia alias adipisci ducimus fugit amet cum consequuntur quo quam, magni esse neque totam!
+              <br/><br/>
+              Labore minima deleniti necessitatibus maxime error delectus, atque excepturi omnis a nostrum! Reiciendis veniam, id officiis commodi alias perferendis? Voluptates numquam neque nesciunt rerum quidem, fugiat adipisci in eius unde? Sed doloremque dolores optio beatae deleniti tempora, iusto exercitationem!
+              <br/><br/>
+              Possimus commodi facere fuga laudantium ex. Ab esse quas possimus ut adipisci sint a modi sit exercitationem tempora
+            </p>
+          </div>
+        </div>
+
+        <div className="about-sections">
+          <div className="about-section">
+            <h2 className="section-title">
+              <MdSchool className="section-icon" />
+              Education
+            </h2>
+            <div className="timeline">
+              <div className="timeline-item">
+                <div className="timeline-dot"></div>
+                <div className="timeline-content">
+                  <div className="timeline-header">
+                    <h3 className="timeline-title">Computer Engineering</h3>
+                    <span className="timeline-date">2022 - 2026</span>
+                  </div>
+                  <p className="timeline-institution">Malatya Turgut Özal University</p>
+                  <p className="timeline-description">GPA: 3.63/4.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="about-section">
+            <h2 className="section-title">
+              <MdWork className="section-icon" />
+              Experience
+            </h2>
+            <div className="timeline">
+              <div className="timeline-item">
+                <div className="timeline-dot"></div>
+                <div className="timeline-content">
+                  <div className="timeline-header">
+                    <h3 className="timeline-title">Job Title</h3>
+                    <span className="timeline-date">2023 - Present</span>
+                  </div>
+                  <p className="timeline-institution">Company Name</p>
+                  <p className="timeline-description">Brief description of your role, responsibilities, and key achievements in this position.</p>
+                </div>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-dot"></div>
+                <div className="timeline-content">
+                  <div className="timeline-header">
+                    <h3 className="timeline-title">Job Title</h3>
+                    <span className="timeline-date">2021 - 2023</span>
+                  </div>
+                  <p className="timeline-institution">Company Name</p>
+                  <p className="timeline-description">Brief description of your role, responsibilities, and key achievements in this position.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default About
+

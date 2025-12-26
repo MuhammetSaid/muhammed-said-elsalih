@@ -1,0 +1,14 @@
+.skills {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  padding: 2rem 0;
+}
+
+/* Responsive düzenlemeler */
+@media (max-width: 768px) {
+  .skills {
+    padding: 1rem 0;
+  }
+}
+

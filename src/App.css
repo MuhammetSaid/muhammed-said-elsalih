@@ -1,0 +1,20 @@
+.app {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: var(--bg-color);
+  transition: background-color 0.3s ease;
+  min-height: 100vh;
+}
+
+/* Responsive düzenlemeler */
+@media (max-width: 768px) {
+  .app {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app {
+    font-size: 12px;
+  }
+}
