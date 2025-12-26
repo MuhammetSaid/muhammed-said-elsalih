@@ -262,7 +262,7 @@
   }
 
   .timeline-dot {
-    left: -20px;
+    left: -15px;
   }
 
   .timeline-content {
@@ -307,6 +307,10 @@
 
   .timeline-content {
     padding: 1rem;
+  }
+
+  .timeline-dot {
+    left: -15px !important;
   }
 
   .timeline-title {
