@@ -4,6 +4,7 @@ import './Hero.css'
 import { FaMapMarkerAlt, FaLinkedin, FaGithub, FaInstagram, FaTwitter, FaFacebook, FaYoutube, FaMedium } from 'react-icons/fa'
 import { MdWork } from "react-icons/md";
 import { SiLeetcode } from "react-icons/si";
+import profileImage from '../../assets/images/ben.jpeg'
 
 const Hero = () => {
   const texts = ['Gen AI Developer','Full Stack Developer', 'Mobile Developer', 'Freelancer']
@@ -90,6 +91,7 @@ const Hero = () => {
           </div>
           <div className="hero-content-right">
             <div className="hero-content-right-image">
+              <img src={profileImage} alt="Muhammed Said" />
             </div>
           </div>
         </div>
