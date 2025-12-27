@@ -1080,14 +1080,409 @@ export const projects = {
     fullDescription: "THE IMAM, İslami hukuk ve şeriat konularında kullanıcılara yardımcı olmak için geliştirilmiş kapsamlı bir mobil uygulamadır. Modern yapay zeka teknolojileri kullanılarak geliştirilmiş bu uygulama, kullanıcıların İslami konularda sorularını yanıtlayabilir ve detaylı bilgi sağlayabilir. FastAPI ile güçlü bir backend altyapısı, LangChain ile gelişmiş dil modeli entegrasyonu ve Flutter ile platformlar arası uyumlu bir kullanıcı arayüzü sunmaktadır."
   },
   4: {
-    id: 4,
-    title: "Portfolio Website",
-    description: "Kişisel portföy web sitesi. Modern tasarım, responsive yapı ve performans odaklı geliştirme ile oluşturulmuş profesyonel bir web sitesi.",
-    image: projectImage,
-    technologies: ["React", "CSS3", "JavaScript"],
+    id: 1,
+    title: "Aiksir Chat — Kendi Özelleştirilebilir Chatbotunuzu Oluşturun!",
+    subtitle: "Software and Artificial Intelligence",
+    buttons: [ "Language", "Download", "Share", "Ask Question", "GitHub", "Demo"],
+    blocks: [
+      {
+        state: "Text",
+        content: [
+          {
+            "type": "normal",
+            "content": "Günümüzde yapay zeka tabanlı chatbotlar, müşteri hizmetlerinden bilgi yönetimine kadar pek çok alanda aktif olarak kullanılıyor. Bu artan talep ve potansiyel kullanım alanlarını göz önünde bulundurarak, ben de kendi chatbot projemi geliştirmeye karar verdim. Ancak amacım, yalnızca basit bir sohbet botu oluşturmak değildi. Her kullanıcının ihtiyaçlarına göre özelleştirebileceği, yönetebileceği ve farklı senaryolara uyarlayabileceği esnek bir sistem geliştirmeyi hedefledim."
+          },
+        ],
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+      {
+        state: "bosluk",
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },  
+      {
+        state: "Text",
+        content: [
+          {
+            "type": "normal",
+            "content": "Bu süreçte, açık kaynaklı bir proje olan Anything LLM Embed’i temel alarak, projeyi nasıl daha güçlü ve fonksiyonel bir chatbot sistemine dönüştürdüğümü adım adım anlatacağım. Özelleştirilebilir özellikler, sohbet kayıt sistemleri ve akıllı asistan entegrasyonlarıyla zenginleştirdiğim bu projede yaşadığım teknik detayları, karşılaştığım zorlukları ve geliştirdiğim çözümleri bu yazıda paylaşacağım."
+          },
+        ],
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+      {
+        state: "Title",
+        content: {
+          "normal": "Projeye Başlangıç",
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '2rem',
+          marginTop: '1.4rem',
+          color: 'var(--text-color)',
+        }
+      },
+      {
+        state: "Text",
+        content: {
+          "normal": "Chatbot sistemini geliştirirken, öncelikle sağlam ve esnek bir temel oluşturacak bir yapı arayışına girdim. Araştırmalarım sonucunda Anything LLM Embed adlı açık kaynaklı bir projeyle karşılaştım. Bu proje, yalnızca frontend tarafında çalışan ve tek bir göreve odaklanan basit bir yapı sunuyordu. Ancak benim hedefim, bu projeyi çok daha fonksiyonel, kullanıcı dostu ve ölçeklenebilir bir sisteme dönüştürmekti."
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+
+      {
+        state: "bosluk",
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },  
+      {
+        state: "Text",
+        content: {
+          "normal": "Bu doğrultuda attığım ilk adım, sisteme bir veritabanı eklemek oldu. MySQL kullanarak gerçekleştirdiğim bu entegrasyon sayesinde, kullanıcıların kendi chatbotlarını oluşturabilmeleri ve bu botlara özel verileri güvenli bir şekilde saklayabilmeleri mümkün hale geldi. Veritabanı sayesinde her kullanıcıya özel sohbet geçmişi, bot ayarları ve diğer kişiselleştirilmiş veriler güvenle tutulabiliyordu."
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+      {
+        state: "bosluk",
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      }, 
+      {
+        state: "Text",
+        content: [
+          {
+            "type": "normal",
+            "content": "Bir sonraki aşamada ise, projeye bir backend ekleyerek veri yönetimini daha kontrollü hale getirdim ve kullanıcı kimlik doğrulama süreçlerini yapılandırdım. "
+          },
+          {
+            "type": "bold",
+            "content": "Backend tarafında, veritabanı ile iletişimi PHP kullanarak sağladım; gelen mesajları alıp cevap verme işlemlerini ise FastAPI ile yönettim."
+          },
+          {
+            "type": "normal",
+            "content": "Bu sayede, bir site sahibi veya kullanıcı chatbot hizmetinden faydalanmak istediğinde sisteme kolayca kayıt olup kendi ihtiyaçlarına özel bir bot oluşturabiliyordu. Bu yapı, yalnızca bireysel kullanıcılar için değil, aynı zamanda çoklu müşterilere hizmet verecek daha geniş kapsamlı bir sistem için de sağlam bir temel sundu."
+          },
+        ],
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+      {
+        state: "line",
+        style: {
+          width: '100%',
+          height: '1px',
+          backgroundColor: 'var(--text-color)',
+          marginTop: '1.4rem',
+          marginBottom: '1.4rem',
+        }
+      },
+      {
+        state: "Title",
+        content: {
+          "normal": "Kullanıcı Kayıt Sistemi ve Benzersiz Kimlik Tanımlaması",
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '2rem',
+          marginTop: '1.4rem',
+          color: 'var(--text-color)',
+        }
+      },
+      {
+        state: "Text",
+        content: {
+          "normal": "Bir kullanıcının sisteme kayıt olmasıyla birlikte, benzersiz bir müşteri ID’si (embed ID) oluşturulmasını sağladım. Bu ID, kullanıcının chatbot hizmetini yönetmesini ve kendi sitesinde chatbotu çalıştırmasını sağlayan temel bileşendi. Kullanıcının bu embed ID ile sisteme bağlanmasını sağlamak için aşağıdaki formatta bir JavaScript kodu oluşturdum:"
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+      {
+        state: "bosluk",
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      }, 
+      {
+        state: "Text",
+        content: {
+          "normal": "Bu script sayesinde kullanıcı, kendi web sitesine chatbotu kolayca entegre edebiliyor ve API aracılığıyla chatbot hizmetinden yararlanabiliyor. Kullanıcı istediği zaman bu kodu değiştirebilir ve chatbotunun görünümünü, davranışını veya özelliklerini güncelleyebilir."
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+      {
+        state: "Title",
+        content: {
+          "normal": "Chatbot Özelleştirme Seçenekleri",
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '2rem',
+          marginTop: '1.4rem',
+          color: 'var(--text-color)',
+        }
+      },
+      {
+        state: "Text",
+        content: {
+          "normal": "Sistemin en önemli özelliklerinden biri, kullanıcının chatbotunu tamamen özelleştirebilmesi oldu. Kullanıcılar, kendi sitelerinin tasarımına uygun şekilde chatbotlarını özelleştirebilirler. Aşağıda chatbotun özelleştirilebileceği bazı parametreleri sıraladım:"
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+      {
+        state: "list",
+        content: {
+          "items": [
+            {
+              "type": "normal",
+              "content": "Chatbotun ana rengi"
+            },
+            {
+              "type": "normal",
+              "content": "Chatbotun adı ve logosu"
+            },
+            {
+              "type": "normal",
+              "content": "Chatbotun davranış biçimi ve yanıt verme sınırları"
+            },
+            {
+              "type": "normal",
+              "content": "Chatbotun yüksekliği ve genişliği"
+            },
+            {
+              "type": "normal",
+              "content": "Sayfada hangi konumda yer alacağı (sağ, sol, üst, alt)"
+            },
+            {
+              "type": "normal",
+              "content": "Yazı tipi ve büyüklüğü"
+            },
+            {
+              "type": "normal",
+              "content": "Açma kapama butonunun tasarımı"
+            }
+          ]
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+          marginLeft: '40px',
+        }
+      },
+      {
+        state: "Text",
+        content: {
+          "normal": "Kullanıcılar, bu özellikleri yönetim panelinden kolayca değiştirebilir ve herhangi bir değişiklik anında chatbotlarına yansır. Böylece, her müşteri kendi sitesine uygun, benzersiz bir chatbot oluşturma imkanına sahip olur."
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+      {
+        state: "Title",
+        content: {
+          "normal": "Kullanıcı Konuşmalarının Takibi ve Yönetimi",
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '2rem',
+          marginTop: '1.4rem',
+          color: 'var(--text-color)',
+        }
+      },
+      {
+        state: "Text",
+        content: {
+          "normal": "Chatbotun bir diğer önemli özelliği, kullanıcı sohbetlerinin kayıt altına alınması oldu. Bir müşteri sitesine chatbot eklediğinde, siteyi ziyaret eden her kullanıcıya benzersiz bir session ID atandı. Bu session ID sayesinde, kullanıcının sohbet geçmişi kaydedildi ve gerektiğinde tekrar erişilebilecek şekilde saklandı."
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+
+      {
+        state: "bosluk",
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      }, 
+
+      {
+        state: "Text",
+        content: {
+          "normal": "Bunun büyük avantajları oldu. Eğer bir kullanıcı chatbotla yaptığı konuşmayı kaybetmek istemiyorsa, bu sohbet veri tabanında saklanarak kalıcı hale geliyordu. Ancak kullanıcı, istediği zaman “Reset Chat” butonuna basarak sohbeti sıfırlayabiliyordu. Sohbet sıfırlandığında, sistem yeni bir boş satır ekleyerek en son oluşturulan kaydı boş olarak gösteriyordu. Bu sayede, kullanıcıya sohbet geçmişinin tamamen silindiği hissi veriliyordu."
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+
+      {
+        state: "bosluk",
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      }, 
+
+      {
+        state: "Text",
+        content: {
+          "normal": "Bu özellik, hem kullanıcıların deneyimini geliştirdi hem de site sahiplerine müşteri etkileşimlerini daha iyi analiz etme imkanı sundu. Site sahibi, herhangi bir hata veya yanlış anlaşılma durumunda belirli bir session ID ile sohbet geçmişini inceleyebilir ve müşteri deneyimini iyileştirebilirdi."
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+
+      {
+        state: "Title",
+        content: {
+          "normal": "Yapay Zeka Entegrasyonu",
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '2rem',
+          marginTop: '1.4rem',
+          color: 'var(--text-color)',
+        }
+      },
+      {
+        state: "Text",
+        content: {
+          "normal": "Chatbotu daha akıllı hale getirmek için yapay zeka entegrasyonu gerçekleştirdim. CrewAI kullanarak OpenAI API’si ile bir Agent oluşturdum. Bu agent, kullanıcıların chatbot ile daha akıcı ve doğal bir şekilde etkileşim kurmasını sağladı."
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+      {
+        state: "Text",
+        content: {
+          "normal": "Geliştirdiğim sistemde chatbot, kullanıcıya önceden belirlenmiş kurallar çerçevesinde yanıt veriyordu. Kullanıcıya en iyi yanıtı sunmak için aşağıdaki kurallar belirlendi:"
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+
+      {
+        state: "list",
+        content: {
+          "items": [
+            {
+              "type": "normal",
+              "content": "Kullanıcının isteğini tam olarak anlayarak en uygun yanıtı sunmak"
+            },
+            {
+              "type": "normal",
+              "content": "Kullanıcının daha önce yaptığı konuşmaları analiz ederek bağlamı korumak"
+            },
+            {
+              "type": "normal",
+              "content": "Sadece doğruluğundan emin olduğu bilgileri sunmak"
+            },
+            {
+              "type": "normal",
+              "content": "Kullanıcının deneyimini iyileştirmek için net ve anlaşılır yanıtlar vermek"
+            },
+            {
+              "type": "normal",
+              "content": "Gereksiz ve yanıltıcı bilgilerden kaçınmak"
+            }
+          ]
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+          marginLeft: '40px',
+          listStyle: 'decimal',
+        }
+      },
+      {
+        state: "bosluk",
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },  
+      {
+        state: "Text",
+        content: {
+          "normal": "Bunun yanında, her chatbot belirli bir marka veya web sitesine hizmet ettiği için, chatbotun verdiği yanıtları o sitenin içeriğiyle sınırlandırdım. Yani, bir chatbot “X şirketinin müşteri hizmetleri” olarak çalışıyorsa, yalnızca X şirketiyle ilgili sorulara yanıt veriyor ve kullanıcıyı yanlış yönlendirmiyordu."
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+
+    ],
+
+    description: "İslam şeriati konularında kullanıcılara yardımcı olmak için geliştirilmiş modern bir mobil uygulama. Kullanıcılar İslami hukuk konularında sorular sorabilir ve detaylı cevaplar alabilirler.",
+    technologies: ["FastAPI", "LangChain", "Flutter", "MySQL"],
     link: "#",
     github: "#",
-    fullDescription: "Modern web teknolojileri kullanılarak geliştirilmiş kişisel portföy web sitesidir. React ile dinamik ve interaktif kullanıcı arayüzü, CSS3 ile modern ve responsive tasarım ve JavaScript ile gelişmiş etkileşimler sunmaktadır. Site, projeleri sergilemek, yetenekleri tanıtmak ve iletişim kurmak için optimize edilmiştir."
+    fullDescription: "THE IMAM, İslami hukuk ve şeriat konularında kullanıcılara yardımcı olmak için geliştirilmiş kapsamlı bir mobil uygulamadır. Modern yapay zeka teknolojileri kullanılarak geliştirilmiş bu uygulama, kullanıcıların İslami konularda sorularını yanıtlayabilir ve detaylı bilgi sağlayabilir. FastAPI ile güçlü bir backend altyapısı, LangChain ile gelişmiş dil modeli entegrasyonu ve Flutter ile platformlar arası uyumlu bir kullanıcı arayüzü sunmaktadır."
   },
   5: {
     id: 5,
