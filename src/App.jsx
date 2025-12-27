@@ -4,6 +4,7 @@ import Home from './sections/Home'
 import AboutPage from './sections/AboutPage'
 import ProjectsPage from './sections/ProjectsPage'
 import ContactPage from './sections/ContactPage'
+import ProjectDetail from './components/ProjectDetail/ProjectDetail'
 import { ThemeProvider } from './context/ThemeContext'
 import './App.css'
 
@@ -16,6 +17,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/projects/:id" element={<ProjectDetail />} />
             <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </main>

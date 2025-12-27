@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 import './Projects.css'
 import projectImage from '../../assets/images/Gemini_Generated_Image_1lbnv41lbnv41lbn.png'
 import masterImage from '../../assets/images/math.png'
 const Projects = () => {
+  const navigate = useNavigate()
   const [showMore, setShowMore] = useState(false)
   const [isMobile, setIsMobile] = useState(() => {
     if (typeof window !== 'undefined') {
@@ -94,7 +96,12 @@ const Projects = () => {
         
         <div className="projects-grid">
           {displayedProjects.map((project) => (
-            <div key={project.id} className="project-card">
+            <div 
+              key={project.id} 
+              className="project-card"
+              onClick={() => navigate(`/projects/${project.id}`)}
+              style={{ cursor: 'pointer' }}
+            >
               <div className="project-image-wrapper">
                 <img 
                   src={project.image} 
@@ -111,7 +118,7 @@ const Projects = () => {
                     <span key={index} className="project-tech-tag">{tech}</span>
                   ))}
                 </div>
-                <div className="project-buttons">
+                <div className="project-buttons" onClick={(e) => e.stopPropagation()}>
                   <a 
                     href={project.link} 
                     target="_blank" 
@@ -157,7 +164,12 @@ const Projects = () => {
           <div className="horizontal-projects-section">
             <div className="horizontal-projects-container">
               {horizontalProjects.map((project) => (
-                <div key={project.id} className="horizontal-project-card">
+                <div 
+                  key={project.id} 
+                  className="horizontal-project-card"
+                  onClick={() => navigate(`/projects/${project.id}`)}
+                  style={{ cursor: 'pointer' }}
+                >
                   <div className="horizontal-project-image-wrapper">
                     <img 
                       src={project.image} 
@@ -173,7 +185,7 @@ const Projects = () => {
                         <span key={index} className="horizontal-project-tech-tag">{tech}</span>
                       ))}
                     </div>
-                    <div className="horizontal-project-buttons">
+                    <div className="horizontal-project-buttons" onClick={(e) => e.stopPropagation()}>
                       <a 
                         href={project.link} 
                         target="_blank" 
