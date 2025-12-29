@@ -22,6 +22,28 @@ import nexoraMath7 from '../assets/images/math_7.png'
 import nexoraMath8 from '../assets/images/math_8.png'
 import nexoraMath9 from '../assets/images/math_9.png'
 import nexoraMath10 from '../assets/images/math_10.png'
+import vorteza1 from '../assets/images/vortezaerp_1.png'
+import vorteza2 from '../assets/images/vortezaerp_2.png'
+import vorteza3 from '../assets/images/vortezaerp_3.png'
+import vorteza4 from '../assets/images/vortezaerp_4.png'
+import vorteza5 from '../assets/images/vortezaerp_5.png'
+import vorteza6 from '../assets/images/vortezaerp_6.png'
+import vorteza7 from '../assets/images/vortezaerp_7.png'
+import vorteza8 from '../assets/images/vortezaerp_8.png'
+import vorteza9 from '../assets/images/vortezaerp_9.png'
+import vorteza10 from '../assets/images/vortezaerp_10.png'
+import vorteza11 from '../assets/images/vortezaerp_11.png'
+import vorteza12 from '../assets/images/vortezaerp_12.png'
+import vorteza13 from '../assets/images/vortezaerp_13.png'
+import vorteza14 from '../assets/images/vortezaerp_14.png'
+import vorteza15 from '../assets/images/vortezaerp_15.png'
+import vorteza16 from '../assets/images/vortezaerp_16.png'
+import vorteza17 from '../assets/images/vortezaerp_17.png'
+import vorteza18 from '../assets/images/vortezaerp_18.png'
+import vorteza19 from '../assets/images/vortezaerp_19.png'
+import vorteza20 from '../assets/images/vortezaerp_20.png'
+import vorteza21 from '../assets/images/vortezaerp_21.png'
+
 
 // Proje verileri
 export const projects = {
@@ -1009,6 +1031,25 @@ export const projects = {
         }
       },
       {
+        state: "image",
+        content: [
+          vorteza1,
+          vorteza5,
+          vorteza2,
+        ],
+        style: {
+          display: 'flex',
+          justifyContent: 'center',
+          margin: '1.4rem 0',
+          gap: '3rem',
+        },
+        image_style: {
+          width: '250px',
+          objectFit: 'cover',
+          borderRadius: '10px',
+        },
+      },
+      {
         state: "Title",
         content: {
           "normal": "Neden Vorteza ERP?",
@@ -1182,6 +1223,8 @@ export const projects = {
         }
       },
 
+      
+
       {
         state: "Text",
         content: [
@@ -1196,6 +1239,7 @@ export const projects = {
           color: 'var(--text-color)',
         }
       },
+      
       {
         state: "list",
         content: {
@@ -1221,9 +1265,7 @@ export const projects = {
           marginLeft: '40px',
         }
       },
-
       
-
       {
         state: "Text",
         content: [
@@ -1236,6 +1278,33 @@ export const projects = {
           fontFamily: 'Noto Sans,sans-serif',
           fontSize: '1rem',
           color: 'var(--text-color)',
+        }
+      },
+      {
+        state: "image",
+        content: [
+          vorteza4,
+        ],
+        style: {
+          display: 'flex',
+          justifyContent: 'center',
+          margin: '1.4rem 0',
+          gap: '3rem',
+        },
+        image_style: {
+          width: '250px',
+          objectFit: 'cover',
+          borderRadius: '10px',
+        },
+      },
+      {
+        state: "line",
+        style: {
+          width: '100%',
+          height: '1px',
+          backgroundColor: 'var(--text-color)',
+          marginTop: '1.4rem',
+          marginBottom: '1.4rem',
         }
       },
 
@@ -1289,6 +1358,35 @@ export const projects = {
           fontSize: '1rem',
           color: 'var(--text-color)',
           marginLeft: '40px',
+        }
+      },
+
+      {
+        state: "image",
+        content: [
+          vorteza6,
+          vorteza7,
+        ],
+        style: {
+          display: 'flex',
+          justifyContent: 'center',
+          margin: '1.4rem 0',
+          gap: '3rem',
+        },
+        image_style: {
+          width: '400px',
+          objectFit: 'cover',
+          borderRadius: '10px',
+        },
+      },
+      {
+        state: "line",
+        style: {
+          width: '100%',
+          height: '1px',
+          backgroundColor: 'var(--text-color)',
+          marginTop: '1.4rem',
+          marginBottom: '1.4rem',
         }
       },
 
@@ -1348,6 +1446,36 @@ export const projects = {
           marginLeft: '40px',
         }
       },
+      {
+        state: "image",
+        content: [
+          vorteza8,
+          vorteza9,
+          vorteza10,
+          vorteza11,
+        ],
+        style: {
+          display: 'flex',
+          justifyContent: 'center',
+          margin: '1.4rem 0',
+          gap: '3rem',
+        },
+        image_style: {
+          width: '400px',
+          objectFit: 'cover',
+          borderRadius: '10px',
+        },
+      },
+      {
+        state: "line",
+        style: {
+          width: '100%',
+          height: '1px',
+          backgroundColor: 'var(--text-color)',
+          marginTop: '1.4rem',
+          marginBottom: '1.4rem',
+        }
+      },
 
       {
         state: "Title",
@@ -1399,6 +1527,34 @@ export const projects = {
           fontSize: '1rem',
           color: 'var(--text-color)',
           marginLeft: '40px',
+        }
+      },
+      {
+        state: "image",
+        content: [
+          vorteza12,
+          vorteza13,
+        ],
+        style: {
+          display: 'flex',
+          justifyContent: 'center',
+          margin: '1.4rem 0',
+          gap: '3rem',
+        },
+        image_style: {
+          width: '400px',
+          objectFit: 'cover',
+          borderRadius: '10px',
+        },
+      },
+      {
+        state: "line",
+        style: {
+          width: '100%',
+          height: '1px',
+          backgroundColor: 'var(--text-color)',
+          marginTop: '1.4rem',
+          marginBottom: '1.4rem',
         }
       },
 
@@ -1511,6 +1667,35 @@ export const projects = {
       }, 
 
       {
+        state: "image",
+        content: [
+          vorteza14,
+          vorteza15,
+        ],
+        style: {
+          display: 'flex',
+          justifyContent: 'center',
+          margin: '1.4rem 0',
+          gap: '3rem',
+        },
+        image_style: {
+          width: '400px',
+          objectFit: 'cover',
+          borderRadius: '10px',
+        },
+      },
+      {
+        state: "line",
+        style: {
+          width: '100%',
+          height: '1px',
+          backgroundColor: 'var(--text-color)',
+          marginTop: '1.4rem',
+          marginBottom: '1.4rem',
+        }
+      },
+
+      {
         state: "Title",
         content: {
           "normal": "Kargo (Shipping) Modülü",
@@ -1561,6 +1746,36 @@ export const projects = {
           fontFamily: 'Noto Sans,sans-serif',
           fontSize: '1rem',
           color: 'var(--text-color)',
+        }
+      },
+
+      {
+        state: "image",
+        content: [
+          vorteza16,
+          vorteza17,
+          vorteza18,
+        ],
+        style: {
+          display: 'flex',
+          justifyContent: 'center',
+          margin: '1.4rem 0',
+          gap: '3rem',
+        },
+        image_style: {
+          width: '400px',
+          objectFit: 'cover',
+          borderRadius: '10px',
+        },
+      },
+      {
+        state: "line",
+        style: {
+          width: '100%',
+          height: '1px',
+          backgroundColor: 'var(--text-color)',
+          marginTop: '1.4rem',
+          marginBottom: '1.4rem',
         }
       },
 
@@ -1616,6 +1831,26 @@ export const projects = {
           marginLeft: '40px',
         }
       },
+      {
+        state: "image",
+        content: [
+          vorteza19,
+          vorteza20,
+          vorteza21,
+        ],
+        style: {
+          display: 'flex',
+          justifyContent: 'center',
+          margin: '1.4rem 0',
+          gap: '3rem',
+        },
+        image_style: {
+          width: '400px',
+          objectFit: 'cover',
+          borderRadius: '10px',
+        },
+      },
+      
       
       {
         state: "line",
