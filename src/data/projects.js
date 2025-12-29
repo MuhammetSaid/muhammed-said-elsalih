@@ -1,10 +1,28 @@
 import { WiDayThunderstorm } from 'react-icons/wi'
 import projectImage from '../assets/images/the_imam.png'
-import masterImage from '../assets/images/math.png'
+import nexoraMathImage from '../assets/images/math.png'
 import hidrojenImage from '../assets/images/hidrojen.png'
 import chatbotsImage from '../assets/images/chatbots.png'
 import vortezImage from '../assets/images/vorteza2.png'
 import theImamImage from '../assets/images/the_imam.png'
+import theImam1 from '../assets/images/the_imam_1.png'
+import theImam2 from '../assets/images/the_imam_2.png'
+import theImam3 from '../assets/images/the_imam_3.png'
+import theImam4 from '../assets/images/the_imam_4.png'
+import theImam5 from '../assets/images/the_imam_5.png'
+import theImam6 from '../assets/images/the_imam_6.png'
+import theImam7 from '../assets/images/the_imam_7.png'
+import nexoraMath1 from '../assets/images/math_1.png'
+import nexoraMath2 from '../assets/images/math_2.png'
+import nexoraMath3 from '../assets/images/math_3.png'
+import nexoraMath4 from '../assets/images/math_4.png'
+import nexoraMath5 from '../assets/images/math_5.png'
+import nexoraMath6 from '../assets/images/math_6.png'
+import nexoraMath7 from '../assets/images/math_7.png'
+import nexoraMath8 from '../assets/images/math_8.png'
+import nexoraMath9 from '../assets/images/math_9.png'
+import nexoraMath10 from '../assets/images/math_10.png'
+
 // Proje verileri
 export const projects = {
   1: {
@@ -43,6 +61,27 @@ export const projects = {
           color: 'var(--text-color)',
         }
       },
+
+      {
+        state: "image",
+        content: [
+          theImam1,
+          theImam2,
+          theImam3,
+        ],
+        style: {
+          display: 'flex',
+          justifyContent: 'center',
+          margin: '1.4rem 0',
+          gap: '3rem',
+        },
+        image_style: {
+          width: '250px',
+          objectFit: 'cover',
+          borderRadius: '10px',
+        },
+      },
+
       {
         state: "Title",
         content: {
@@ -119,6 +158,39 @@ export const projects = {
         }
       },
       
+      // Line
+      {
+        state: "line",
+        style: {
+          width: '100%',
+          height: '1px',
+          backgroundColor: 'var(--text-color)',
+          marginTop: '1.4rem',
+          marginBottom: '1.4rem',
+        }
+      },
+
+      {
+        state: "image",
+        content: [
+          theImam4,
+          theImam5,
+          theImam6,
+          theImam7,
+        ],
+        style: {
+          display: 'flex',
+          justifyContent: 'center',
+          margin: '1.4rem 0',
+          gap: '3rem',
+        },
+        image_style: {
+          width: '250px',
+          objectFit: 'cover',
+          borderRadius: '10px',
+        },
+      },
+
       // Line
       {
         state: "line",
@@ -427,13 +499,493 @@ export const projects = {
   },
   2: {
     id: 2,
-    title: "E-Commerce Platform",
-    description: "Modern ve kullanıcı dostu bir e-ticaret platformu. Güvenli ödeme sistemi, ürün yönetimi ve kullanıcı paneli ile tam özellikli bir alışveriş deneyimi sunar.",
-    image: masterImage,
-    technologies: ["FastAPI", "Flutter", "MySQL", "Canva"],
+    title: "Nexora - Math ",
+    subtitle: "Software and Artificial Intelligence",
+    buttons: [ "Language", "Download", "Share", "Ask Question", "GitHub", "Demo"],
+    blocks: [
+      {
+        state: "Text",
+        content: [
+          {
+            "type": "normal",
+            "content": "Modern teknolojilerle dini içerikleri birleştiren"
+          },
+          {
+            "type": "bold",
+            "content": " The Imam"
+          },
+          {
+            "type": "normal",
+            "content": ", kullanıcıların İslami kaynaklardan doğru bilgilere hızlıca ulaşmasını sağlayan yenilikçi bir mobil uygulama. Bu proje, "
+          },
+          {
+            "type": "bold",
+            "content": "Retrieval Augmented Generation (RAG) "
+          },
+          {
+            "type": "normal",
+            "content": "teknolojisini kullanarak, geleneksel dini metinleri yapay zeka ile buluşturuyor. RAG, yapay zekanın bilgi kaynaklarından öğrenmesini ve kullanıcı sorularına kaynak göstererek cevap vermesini sağlayan bir yaklaşım."
+          },
+        ],
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+
+      {
+        state: "image",
+        content: [
+          nexoraMath1,
+          nexoraMath2,
+          nexoraMath3,
+        ],
+        style: {
+          display: 'flex',
+          justifyContent: 'center',
+          margin: '1.4rem 0',
+          gap: '3rem',
+        },
+        image_style: {
+          width: '250px',
+          objectFit: 'cover',
+          borderRadius: '10px',
+        },
+      },
+
+      {
+        state: "Title",
+        content: {
+          "normal": "Proje Hakkında",
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '2rem',
+          marginTop: '1.4rem',
+          color: 'var(--text-color)',
+        }
+      },
+      {
+        state: "Text",
+        content: {
+          "bold": "The Imam",
+          "normal": ", geniş bir İslami kaynak koleksiyonunu vektör tabanlı arama sistemi ile indeksleyen, kullanıcı sorularına kaynak göstererek cevap veren bir AI asistanı. Uygulama, Kuran-ı Kerim, Tefsir kitapları, Fıkıh eserleri ve diğer önemli İslami kaynakları içeren kapsamlı bir veritabanına sahiptir. OpenAI embeddings, ChromaDB ve LangChain/LangGraph gibi modern AI araçları kullanılarak geliştirilmiştir."
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+
+      {
+        state: "Title",
+        content: {
+          "normal": "Ana Özellikler",
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '2rem',
+          color: 'var(--text-color)',
+          marginTop: "1.4rem"
+        }
+      },
+
+      {
+        state: "list",
+        content: {
+          "items": [
+            {
+              "type": "normal",
+              "content": "🤖 AI Destekli Sohbet: Kullanıcı sorularına Kuran, tefsir, fıkıh ve diğer İslami kaynaklardan cevap veren akıllı asistan"
+            },
+            {
+              "type": "normal",
+              "content": "📚 Kaynak Gösterimi: Her cevap için ilgili sure ve ayet referansları"
+            },
+            {
+              "type": "normal",
+              "content": "🔍 Semantic Search: Anlama dayalı vektör araması ile en ilgili içerikleri bulma"
+            },
+            {
+              "type": "normal",
+              "content": "💬 Sohbet Geçmişi: Kullanıcı konuşmalarını MySQL veritabanında kaydetme ve yönetme"
+            },
+            {
+              "type": "normal",
+              "content": "🔐 JWT Authentication: Token tabanlı güvenli kullanıcı kimlik doğrulama"
+            },
+            {
+              "type": "normal",
+              "content": "📱 Modern Mobil Arayüz: Flutter ile geliştirilmiş kullanıcı dostu tasarım"
+            }
+          ]
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+          marginLeft: '40px',
+        }
+      },
+      
+      // Line
+      {
+        state: "line",
+        style: {
+          width: '100%',
+          height: '1px',
+          backgroundColor: 'var(--text-color)',
+          marginTop: '1.4rem',
+          marginBottom: '1.4rem',
+        }
+      },
+
+      {
+        state: "image",
+        content: [
+          nexoraMath4,
+          nexoraMath5,
+          nexoraMath7,
+        ],
+        style: {
+          display: 'flex',
+          justifyContent: 'center',
+          margin: '1.4rem 0',
+          gap: '3rem',
+        },
+        image_style: {
+          width: '250px',
+          objectFit: 'cover',
+          borderRadius: '10px',
+        },
+      },
+
+      // Line
+      {
+        state: "line",
+        style: {
+          width: '100%',
+          height: '1px',
+          backgroundColor: 'var(--text-color)',
+          marginTop: '1.4rem',
+          marginBottom: '1.4rem',
+        }
+      },
+
+      // Title
+      {
+        state: "Title",
+        content: {
+          "normal": " Nasıl Çalışıyor?",
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '2rem',
+          color: 'var(--text-color)',
+          marginTop: "1.4rem"
+        }
+      },
+
+      {
+        state: "Text",
+        content: [
+          {
+            "type": "normal",
+            "content": "The Imam, iki ana parçadan oluşuyor: "
+          },
+          {
+            "type": "bold",
+            "content": "mobil uygulama"
+          },
+          {
+            "type": "normal",
+            "content": " (Flutter ile geliştirildi) ve "
+          },
+          {
+            "type": "bold",
+            "content": "sunucu tarafı "
+          },
+          {
+            "type": "normal",
+            "content": "(Python ile yazıldı)."
+          },
+        ],
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+
+      {
+        state: "Title",
+        content: {
+          "normal": "Sunucu Tarafı (Backend)",
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '2rem',
+          color: 'var(--text-color)',
+          marginTop: "1.4rem"
+        }
+      },
+
+      {
+        state: "Text",
+        content: [
+          {
+            "type": "normal",
+            "content": "Backend, "
+          },
+          {
+            "type": "bold",
+            "content": "Python"
+          },
+          {
+            "type": "normal",
+            "content": " ve"
+          },
+          {
+            "type": "bold",
+            "content": " FastAPI"
+          },
+          {
+            "type": "normal",
+            "content": " framework'ü ile geliştirildi. Sistem, kullanıcı sorularını alıp, İslami kaynaklarda arama yapıyor ve cevapları hazırlıyor. Temel olarak şu adımları izliyor:"
+          },
+        ],
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+
+      {
+        state: "list",
+        content: {
+          "items": [
+            {
+              "type": "normal",
+              "content": "Vektörleştirme (Embedding): Tüm İslami metinler (Kuran, tefsir, fıkıh vb.) OpenAI'nin text-embedding-3-large modeli kullanılarak vektörlere dönüştürülüyor. Bu işlem, metinleri sayısal değerlere çevirerek bilgisayarın anlayabileceği forma getiriyor. Uzun metinler, RecursiveCharacterTextSplitter kullanılarak yaklaşık 50,000 karakterlik parçalara bölünüyor. Bu parçalama işlemi, OpenAI'nin token limitlerini aşmamak ve daha verimli arama yapabilmek için gerekli."
+            },
+            {
+              "type": "normal",
+              "content": "Vektör Veritabanı (ChromaDB): Vektörleştirilmiş metinler, ChromaDB adı verilen özel bir vektör veritabanına kaydediliyor. Her metin parçası, hangi sure, ayet veya kitaptan geldiğini gösteren metadata ile birlikte saklanıyor."
+            },
+            {
+              "type": "normal",
+              "content": "Semantic Search (Anlama Dayalı Arama): Kullanıcı bir soru sorduğunda, sistem önce bu soruyu vektörleştiriyor, sonra ChromaDB'de cosine similarity (kosinüs benzerliği) kullanarak en ilgili 3 kaynağı buluyor. Bu arama yöntemi, geleneksel kelime eşleştirmesinden farklı olarak metinlerin anlamına da bakıyor."
+            },
+            {
+              "type": "normal",
+              "content": "LLM ile Cevap Oluşturma: Bulunan kaynaklar, GPT-4o-mini modeline context olarak gönderiliyor ve kullanıcının sorusuna uygun bir cevap oluşturuluyor. LangChain ve LangGraph kütüphaneleri, bu süreci yönetiyor ve AI agent'ın kaynakları doğru şekilde kullanmasını sağlıyor."
+            }
+          ]
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+          marginLeft: '40px',
+          listStyle: 'decimal',
+        }
+      },
+      {
+        state: "image",
+        content: [
+          nexoraMath8,
+          nexoraMath9,
+          nexoraMath10,
+        ],
+        style: {
+          display: 'flex',
+          justifyContent: 'center',
+          margin: '1.4rem 0',
+          gap: '3rem',
+        },
+        image_style: {
+          width: '250px',
+          objectFit: 'cover',
+          borderRadius: '10px',
+        },
+      },
+      {
+        state: "Title",
+        content: {
+          "normal": " Mobil Uygulama (Frontend)",
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '2rem',
+          color: 'var(--text-color)',
+          marginTop: "1.4rem"
+        }
+      },
+      
+      {
+        state: "Text",
+        content: [
+          {
+            "type": "normal",
+            "content": "Mobil uygulama, "
+          },
+          {
+            "type": "bold",
+            "content": "Flutter "
+          },
+          {
+            "type": "normal",
+            "content": "framework'ü ile geliştirildi. "
+          },
+          {
+            "type": "bold",
+            "content": "Dart "
+          },
+          {
+            "type": "normal",
+            "content": "programlama dili kullanılarak yazıldı ve"
+          },
+          {
+            "type": "bold",
+            "content": " Material Design 3 "
+          },
+          {
+            "type": "normal",
+            "content": "prensiplerine uygun olarak tasarlandı. Uygulama, "
+          },
+          {
+            "type": "bold",
+            "content": "RESTful API "
+          },
+          {
+            "type": "normal",
+            "content": "ile backend ile iletişim kuruyor. Kullanıcılar:"
+          },
+        ],
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+      {
+        state: "list",
+        content: {
+          "items": [
+            {
+              "type": "normal",
+              "content": "Sorularını yazabiliyor"
+            },
+            {
+              "type": "normal",
+              "content": "Cevapları anlık olarak alabiliyor"
+            },
+            {
+              "type": "normal",
+              "content": "Kaynak linklerine tıklayarak ilgili bölümlere gidebiliyor"
+            },
+            {
+              "type": "normal",
+              "content": "SharedPreferences ile yerel olarak saklanan önceki konuşmalarını görebiliyor"
+            }
+          ]
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+          marginLeft: '40px',
+        }
+      },
+      {
+        state: "line",
+        style: {
+          width: '100%',
+          height: '1px',
+          backgroundColor: 'var(--text-color)',
+          marginTop: '1.4rem',
+          marginBottom: '1.4rem',
+        }
+      },
+      {
+        state: "Title",
+        content: {
+          "normal": " RAG Pipeline: İşleyiş Süreci",
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '2rem',
+          color: 'var(--text-color)',
+          marginTop: "1.4rem"
+        }
+      },
+      {
+        state: "Text",
+        content: [
+          {
+            "type": "normal",
+            "content": "Sistem, "
+          },
+          {
+            "type": "bold",
+            "content": "RAG (Retrieval Augmented Generation) "
+          },
+          {
+            "type": "normal",
+            "content": "yaklaşımını kullanarak çalışıyor. Bu süreç şu adımlardan oluşuyor:"
+          }
+        ],
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+
+      {
+        state: "list",
+        content: {
+          "items": [
+            {
+              "type": "normal",
+              "content": "Indexing (İndeksleme): Tüm İslami metinler JSON formatından okunuyor, text chunking ile parçalara bölünüyor ve OpenAI embeddings API'si kullanılarak vektörleştiriliyor. Her chunk için metadata (sure numarası, ayet numaraları, kaynak bilgisi) saklanıyor."
+            },
+            {
+              "type": "normal",
+              "content": "Query Processing: Kullanıcı sorduğunda, soru da aynı şekilde vektörleştiriliyor."
+            },
+            {
+              "type": "normal",
+              "content": "Retrieval: ChromaDB'de similarity search yapılarak en ilgili 3 doküman bulunuyor. Bu işlem, cosine similarity metriği kullanılarak gerçekleştiriliyor."
+            },
+            {
+              "type": "normal",
+              "content": "Generation: Bulunan kaynaklar, LangChain üzerinden GPT-4o-mini modeline context olarak gönderiliyor. Model, bu kaynakları kullanarak kullanıcının sorusuna cevap oluşturuyor."
+            },
+            {
+              "type": "normal",
+              "content": "Response: Cevap, kaynak metadata'sı ile birlikte kullanıcıya döndürülüyor. Frontend'te, bu kaynaklar tıklanabilir linkler olarak gösteriliyor."
+            }
+          ]
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+          marginLeft: '40px',
+          listStyle: 'decimal',
+        }
+      },
+    ],
+    image: nexoraMathImage,
+    description: "İslam şeriati konularında kullanıcılara yardımcı olmak için geliştirilmiş modern bir mobil uygulama. Kullanıcılar İslami hukuk konularında sorular sorabilir ve detaylı cevaplar alabilirler.",
+    technologies: ["FastAPI", "LangChain", "Flutter", "MySQL"],
     link: "#",
     github: "#",
-    fullDescription: "Bu e-ticaret platformu, modern web ve mobil teknolojileri kullanarak geliştirilmiş kapsamlı bir alışveriş deneyimi sunmaktadır. FastAPI ile güçlü ve hızlı bir backend altyapısı, Flutter ile iOS ve Android platformlarında çalışan mobil uygulama ve MySQL ile güvenilir veri depolama sistemi içermektedir. Kullanıcılar güvenli ödeme yapabilir, ürünleri filtreleyebilir ve kolayca sipariş verebilirler."
+    fullDescription: "THE IMAM, İslami hukuk ve şeriat konularında kullanıcılara yardımcı olmak için geliştirilmiş kapsamlı bir mobil uygulamadır. Modern yapay zeka teknolojileri kullanılarak geliştirilmiş bu uygulama, kullanıcıların İslami konularda sorularını yanıtlayabilir ve detaylı bilgi sağlayabilir. FastAPI ile güçlü bir backend altyapısı, LangChain ile gelişmiş dil modeli entegrasyonu ve Flutter ile platformlar arası uyumlu bir kullanıcı arayüzü sunmaktadır."
   },
   3: {
     id: 1,

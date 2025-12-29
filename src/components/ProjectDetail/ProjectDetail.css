@@ -345,3 +345,185 @@
     padding: 0.5rem 1rem;
   }
 }
+
+/* Image Slider Styles */
+.image-slider-container {
+  position: relative;
+  width: 100%;
+  margin: 1.4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.image-slider-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Masaüstü görünümü - tüm resimler yan yana */
+.image-slider-desktop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/* Mobil görünümü - slider */
+.image-slider-mobile {
+  display: none;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-slider-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.image-slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--primary-op-color);
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: none; /* Varsayılan olarak gizli, mobilde gösterilecek */
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+  font-size: 1.2rem;
+}
+
+.image-slider-btn:hover {
+  background: var(--primary-color);
+  color: var(--bg-color);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.image-slider-btn-prev {
+  left: 10px;
+}
+
+.image-slider-btn-next {
+  right: 10px;
+}
+
+.image-slider-dots {
+  display: none; /* Varsayılan olarak gizli, mobilde gösterilecek */
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.image-slider-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid var(--primary-color);
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.image-slider-dot.active {
+  background: var(--primary-color);
+  transform: scale(1.2);
+}
+
+.image-slider-dot:hover {
+  background: var(--primary-op-color);
+}
+
+/* Responsive Slider - Tablet ve Mobil */
+@media (max-width: 1024px) {
+  /* Masaüstü görünümünü gizle */
+  .image-slider-desktop {
+    display: none;
+  }
+  
+  /* Mobil görünümünü göster */
+  .image-slider-mobile {
+    display: flex;
+  }
+  
+  /* Slider butonlarını göster */
+  .image-slider-btn {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+
+  .image-slider-btn-prev {
+    left: 10px;
+  }
+
+  .image-slider-btn-next {
+    right: 10px;
+  }
+  
+  /* Dot'ları göster */
+  .image-slider-dots {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .image-slider-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+
+  .image-slider-btn-prev {
+    left: 5px;
+  }
+
+  .image-slider-btn-next {
+    right: 5px;
+  }
+
+  .image-slider-dots {
+    margin-top: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-slider-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 0.9rem;
+  }
+
+  .image-slider-btn-prev {
+    left: 0;
+  }
+
+  .image-slider-btn-next {
+    right: 0;
+  }
+}

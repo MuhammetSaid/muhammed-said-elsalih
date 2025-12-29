@@ -3,7 +3,72 @@ import { useEffect, useState } from 'react'
 import './ProjectDetail.css'
 import { projects } from '../../data/projects'
 import Header from '../Header/Header'
-import { FaLanguage, FaDownload, FaShare, FaQuestion, FaGithub, FaPlay } from 'react-icons/fa'
+import { FaLanguage, FaDownload, FaShare, FaQuestion, FaGithub, FaPlay, FaChevronLeft, FaChevronRight } from 'react-icons/fa'
+
+// ImageSlider Component
+const ImageSlider = ({ images, projectTitle, blockStyle, imageStyle }) => {
+  const [currentIndex, setCurrentIndex] = useState(0)
+
+  const goToPrevious = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1))
+  }
+
+  const goToNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1))
+  }
+
+  // blockStyle'dan display ve justifyContent'u çıkar, sadece margin gibi diğer stilleri kullan
+  const containerStyle = { ...blockStyle }
+  delete containerStyle.display
+  delete containerStyle.justifyContent
+  delete containerStyle.gap
+
+  return (
+    <div className="image-slider-container" style={containerStyle}>
+      <div className="image-slider-wrapper">
+        <button className="image-slider-btn image-slider-btn-prev" onClick={goToPrevious}>
+          <FaChevronLeft />
+        </button>
+        <div className="image-slider-content">
+          {/* Masaüstü görünümü için tüm resimler */}
+          <div className="image-slider-desktop">
+            {images.map((image, idx) => (
+              <img 
+                key={idx}
+                src={image} 
+                alt={`${projectTitle} - ${idx + 1}`} 
+                style={imageStyle}
+                className="image-slider-image"
+              />
+            ))}
+          </div>
+          {/* Mobil/tablet görünümü için slider */}
+          <div className="image-slider-mobile">
+            <img 
+              src={images[currentIndex]} 
+              alt={`${projectTitle} - ${currentIndex + 1}`} 
+              style={imageStyle}
+              className="image-slider-image"
+            />
+          </div>
+        </div>
+        <button className="image-slider-btn image-slider-btn-next" onClick={goToNext}>
+          <FaChevronRight />
+        </button>
+      </div>
+      <div className="image-slider-dots">
+        {images.map((_, idx) => (
+          <button
+            key={idx}
+            className={`image-slider-dot ${idx === currentIndex ? 'active' : ''}`}
+            onClick={() => setCurrentIndex(idx)}
+            aria-label={`Görsel ${idx + 1}`}
+          />
+        ))}
+      </div>
+    </div>
+  )
+}
 
 const ProjectDetail = () => {
   const { id } = useParams()
@@ -94,6 +159,65 @@ const ProjectDetail = () => {
 
           <div className="project-detail-description" >
             {project.blocks.map((block, index) => {
+              // Özel state kontrolleri önce yapılmalı
+              if (block.state === "image") {
+                // Birden fazla resim varsa slider göster
+                if (block.content.length > 1) {
+                  return <ImageSlider key={index} images={block.content} projectTitle={project.title} blockStyle={block.style} imageStyle={block.image_style} />;
+                }
+                // Tek resim varsa normal göster
+                return (
+                  <div key={index} style={block.style}>
+                    <img src={block.content[0]} alt={project.title} style={block.image_style} />
+                  </div>
+                );
+              }
+
+              if (block.state === "list") {
+                // Eğer listStyle decimal ise ol kullan, değilse ul kullan
+                const isOrdered = block.style?.listStyle === 'decimal' || block.style?.listStyleType === 'decimal';
+                const ListTag = isOrdered ? 'ol' : 'ul';
+                const listStyle = isOrdered ? 'decimal' : 'disc';
+                
+                return (
+                  <ListTag key={index} style={{ ...block.style, listStyleType: listStyle }} className="project-detail-list">
+                    {block.content.items.map((item, idx) => {
+                      const content = item.content;
+                      if (typeof content === 'string') {
+                        const colonIndex = content.indexOf(':');
+                        if (colonIndex !== -1) {
+                          const beforeColon = content.substring(0, colonIndex + 1);
+                          const afterColon = content.substring(colonIndex + 1);
+                          return (
+                            <li key={idx}>
+                              <span style={{ fontWeight: 900 }}>{beforeColon}</span>
+                              {afterColon}
+                            </li>
+                          );
+                        }
+                      }
+                      return <li key={idx}>{content}</li>;
+                    })}
+                  </ListTag>
+                );
+              }
+              
+              if (block.state === "line") {
+                return (
+                  <div key={index} style={block.style}>
+                    <hr />
+                  </div>
+                );
+              }
+              
+              if (block.state === "bosluk") {
+                return (
+                  <div key={index} style={block.style}>
+                    <br />
+                  </div>
+                );
+              }
+              
               // Eğer content bir array ise (ilk format)
               if (Array.isArray(block.content)) {
                 return (
@@ -130,50 +254,6 @@ const ProjectDetail = () => {
                     </p>
                   );
                 }
-              }
-
-              if (block.state === "list") {
-                // Eğer listStyle decimal ise ol kullan, değilse ul kullan
-                const isOrdered = block.style?.listStyle === 'decimal' || block.style?.listStyleType === 'decimal';
-                const ListTag = isOrdered ? 'ol' : 'ul';
-                const listStyle = isOrdered ? 'decimal' : 'disc';
-                
-                return (
-                  <ListTag key={index} style={{ ...block.style, listStyleType: listStyle }} className="project-detail-list">
-                    {block.content.items.map((item, idx) => {
-                      const content = item.content;
-                      if (typeof content === 'string') {
-                        const colonIndex = content.indexOf(':');
-                        if (colonIndex !== -1) {
-                          const beforeColon = content.substring(0, colonIndex + 1);
-                          const afterColon = content.substring(colonIndex + 1);
-                          return (
-                            <li key={idx}>
-                              <span style={{ fontWeight: 900 }}>{beforeColon}</span>
-                              {afterColon}
-                            </li>
-                          );
-                        }
-                      }
-                      return <li key={idx}>{content}</li>;
-                    })}
-                  </ListTag>
-                );
-              }
-              if (block.state === "line") {
-                return (
-                  <div key={index} style={block.style}>
-                    <hr />
-                  </div>
-                );
-              }
-              
-              if (block.state === "bosluk") {
-                return (
-                  <div key={index} style={block.style}>
-                    <br />
-                  </div>
-                );
               }
 
               // String formatı (eski format - geriye uyumluluk için)
