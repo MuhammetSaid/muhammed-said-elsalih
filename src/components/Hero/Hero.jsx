@@ -56,6 +56,10 @@ const Hero = () => {
     document.body.removeChild(link)
   }
 
+  const handleContactMe = () => {
+    window.open('https://wa.me/905370606607', '_blank')
+  }
+
   return (
     <section id="hero" className="hero">
         <header className="hero-header">
@@ -83,7 +87,7 @@ const Hero = () => {
 
             <div className="hero-content-left-buttons">
               <button className="hero-content-left-button" onClick={handleDownloadCV}>Download CV</button>
-              <button className="hero-content-left-button">Contact Me</button>
+              <button className="hero-content-left-button" onClick={handleContactMe}>Contact Me</button>
             </div>
 
             <div className="line1"></div>
