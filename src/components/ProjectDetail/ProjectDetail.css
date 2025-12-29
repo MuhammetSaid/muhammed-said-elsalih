@@ -75,7 +75,7 @@
 
 .sus-content {
   width: 80%;
-  height: .5vh;
+  height: .1vh;
   background: linear-gradient(to right, var(--bg-color), var(--primary-color), var(--bg-color));
 }
 
