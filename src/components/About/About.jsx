@@ -14,11 +14,11 @@ const About = () => {
           <div className="about-content-left">
             <h1 className="about-content-left-title">Building Exceptional User Experiences</h1>
             <p className="about-content-left-bio">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id error, a aspernatur officia provident perferendis saepe nisi quae et nam repellendus laboriosam quia alias adipisci ducimus fugit amet cum consequuntur quo quam, magni esse neque totam!
+            I’m Muhammed Said Elsalih, a 4th-year Computer Engineering student focused on web development and Generative AI. For the past 1.5 years, I’ve been actively working as a volunteer intern in the GenAI field, gaining hands-on experience by solving real-world problems and building AI-driven solutions.
               <br/><br/>
-              Labore minima deleniti necessitatibus maxime error delectus, atque excepturi omnis a nostrum! Reiciendis veniam, id officiis commodi alias perferendis? Voluptates numquam neque nesciunt rerum quidem, fugiat adipisci in eius unde? Sed doloremque dolores optio beatae deleniti tempora, iusto exercitationem!
-              <br/><br/>
-              Possimus commodi facere fuga laudantium ex. Ab esse quas possimus ut adipisci sint a modi sit exercitationem tempora
+              I develop full-stack applications using React, Flask, and REST APIs, while continuously strengthening my problem-solving and algorithmic thinking through LeetCode. I enjoy designing scalable, efficient, and user-centered systems that combine modern web technologies with AI.
+              <br/><br/>  
+              My goal is to build intelligent, production-ready applications by bridging web development and generative AI.
             </p>
           </div>
         </div>

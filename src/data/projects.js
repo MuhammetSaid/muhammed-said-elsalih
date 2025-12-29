@@ -1,7 +1,10 @@
 import { WiDayThunderstorm } from 'react-icons/wi'
-import projectImage from '../assets/images/Gemini_Generated_Image_1lbnv41lbnv41lbn.png'
+import projectImage from '../assets/images/the_imam.png'
 import masterImage from '../assets/images/math.png'
-
+import hidrojenImage from '../assets/images/hidrojen.png'
+import chatbotsImage from '../assets/images/chatbots.png'
+import vortezImage from '../assets/images/vorteza2.png'
+import theImamImage from '../assets/images/the_imam.png'
 // Proje verileri
 export const projects = {
   1: {
@@ -415,7 +418,7 @@ export const projects = {
         }
       },
     ],
-
+    image: theImamImage,
     description: "İslam şeriati konularında kullanıcılara yardımcı olmak için geliştirilmiş modern bir mobil uygulama. Kullanıcılar İslami hukuk konularında sorular sorabilir ve detaylı cevaplar alabilirler.",
     technologies: ["FastAPI", "LangChain", "Flutter", "MySQL"],
     link: "#",
@@ -436,6 +439,7 @@ export const projects = {
     id: 1,
     title: "Vorteza ERP: Modern, Akıllı ve Entegre Web Tabanlı İşletme Yönetim Sistemi",
     subtitle: "Software and Artificial Intelligence",
+    image: vortezImage,
     buttons: [ "Language", "Download", "Share", "Ask Question", "GitHub", "Demo"],
     blocks: [
       {
@@ -1083,6 +1087,7 @@ export const projects = {
     id: 1,
     title: "Aiksir Chat — Kendi Özelleştirilebilir Chatbotunuzu Oluşturun!",
     subtitle: "Software and Artificial Intelligence",
+    image: chatbotsImage,
     buttons: [ "Language", "Download", "Share", "Ask Question", "GitHub", "Demo"],
     blocks: [
       {
@@ -1486,9 +1491,9 @@ export const projects = {
   },
   5: {
     id: 5,
-    title: "Weather App",
+    title: "Geen",
     description: "Gerçek zamanlı hava durumu uygulaması. Kullanıcı dostu arayüz ve detaylı hava durumu bilgileri sunan modern bir mobil uygulama.",
-    image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=800",
+    image: hidrojenImage,
     technologies: ["React Native", "API", "TypeScript"],
     link: "#",
     github: "#",

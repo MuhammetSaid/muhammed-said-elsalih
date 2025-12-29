@@ -4,6 +4,7 @@ import './ProjectDetail.css'
 import { projects } from '../../data/projects'
 import Header from '../Header/Header'
 import { FaLanguage, FaDownload, FaShare, FaQuestion, FaGithub, FaPlay } from 'react-icons/fa'
+
 const ProjectDetail = () => {
   const { id } = useParams()
   const navigate = useNavigate()
@@ -33,66 +34,60 @@ const ProjectDetail = () => {
       </div>
 
       <div className="project-detail-container">
-        {
-          project.image && (
-            <div className="project-detail-hero">
-              <div className="project-detail-image-wrapper">
-                <img 
-                  src={project.image} 
-                  alt={project.title}
-                  className="project-detail-image"
-                />
-                <div className="project-detail-gradient"></div>
+        <div className="project-detail-content">
+          <div className="titles-container">
+            <div className="titles">
+              <h1 className="project-detail-title">{project.title}</h1>
+              <h4 className="project-detail-subtitle">{project.subtitle}</h4>
+              <div className="project-detail-technologies">
+                {project.buttons.map((tech, index) => {
+                  if (tech === "Language") {
+                    return (
+                      <div className="project-detail-language-btn" style={{ cursor: 'pointer' }} onClick={() => setLanguage(language === "English" ? "Turkish" : "English")} key={index}>
+                        <span className='project-detail-tech-tag'> <FaLanguage /> {language}</span>
+                      </div>
+                    )
+                  } else if (tech === "Download") {
+                    return (
+                      <div className="project-detail-download-btn" style={{ cursor: 'pointer' }} key={index}>
+                        <span className='project-detail-tech-tag'> <FaDownload style={{ fontSize: '1rem' }} /> {tech}</span>
+                      </div>
+                    )
+                  } else if (tech === "Share") {
+                    return (
+                      <div className="project-detail-share-btn" style={{ cursor: 'pointer' }} key={index}>
+                        <span className='project-detail-tech-tag'> <FaShare style={{ fontSize: '1rem' }} /> {tech}</span>
+                      </div>
+                    )
+                  } else if (tech === "Ask Question") {
+                    return (
+                      <div className="project-detail-ask-question-btn" style={{ cursor: 'pointer' }} key={index}>
+                        <span className='project-detail-tech-tag'> <FaQuestion style={{ fontSize: '1rem' }} /> {tech}</span>
+                      </div>
+                    )
+                  } else if (tech === "GitHub") {
+                    return (
+                      <div className="project-detail-github" style={{ cursor: 'pointer' }} key={index}>
+                        <span className='project-detail-tech-tag'> <FaGithub style={{ fontSize: '1rem' }} /> {tech}</span>
+                      </div>
+                    )
+                  } else if (tech === "Demo") {
+                    return (
+                      <div className="project-detail-demo-btn" style={{ cursor: 'pointer' }} key={index}>
+                        <span className='project-detail-tech-tag'> <FaPlay style={{ fontSize: '1rem' }} /> {tech}</span>
+                      </div>
+                    )
+                  }
+                  return null
+                })}
               </div>
             </div>
-          )
-        }
-
-        <div className="project-detail-content">
-          <h1 className="project-detail-title">{project.title}</h1>
-          <h4 className="project-detail-subtitle">{project.subtitle}</h4>
-          <div className="project-detail-technologies">
-            {project.buttons.map((tech, index) => {
-              if (tech === "Language") {
-                return (
-                  <div className="project-detail-language-btn" style={{ cursor: 'pointer' }} onClick={() => setLanguage(language === "English" ? "Turkish" : "English")} key={index}>
-                    <span className='project-detail-tech-tag'> <FaLanguage /> {language}</span>
-                  </div>
-                )
-              } else if (tech === "Download") {
-                return (
-                  <div className="project-detail-download-btn" style={{ cursor: 'pointer' }} key={index}>
-                    <span className='project-detail-tech-tag'> <FaDownload style={{ fontSize: '1rem' }} /> {tech}</span>
-                  </div>
-                )
-              } else if (tech === "Share") {
-                return (
-                  <div className="project-detail-share-btn" style={{ cursor: 'pointer' }} key={index}>
-                    <span className='project-detail-tech-tag'> <FaShare style={{ fontSize: '1rem' }} /> {tech}</span>
-                  </div>
-                )
-              } else if (tech === "Ask Question") {
-                return (
-                  <div className="project-detail-ask-question-btn" style={{ cursor: 'pointer' }} key={index}>
-                    <span className='project-detail-tech-tag'> <FaQuestion style={{ fontSize: '1rem' }} /> {tech}</span>
-                  </div>
-                )
-              } else if (tech === "GitHub") {
-                return (
-                  <div className="project-detail-github" style={{ cursor: 'pointer' }} key={index}>
-                    <span className='project-detail-tech-tag'> <FaGithub style={{ fontSize: '1rem' }} /> {tech}</span>
-                  </div>
-                )
-              } else if (tech === "Demo") {
-                return (
-                  <div className="project-detail-demo-btn" style={{ cursor: 'pointer' }} key={index}>
-                    <span className='project-detail-tech-tag'> <FaPlay style={{ fontSize: '1rem' }} /> {tech}</span>
-                  </div>
-                )
-              }
-              return null
-            })}
+            <div className="image">
+              <img src={project.image} alt={project.title} />
+            </div>
           </div>
+
+
           <div style={{ width: '100%', marginTop: '.4rem', marginBottom: '2rem' }}>
             <hr />
           </div>

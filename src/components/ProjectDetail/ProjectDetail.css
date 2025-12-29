@@ -18,6 +18,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 2rem 4rem;
+  padding-top: .4rem;
 }
 
 .project-detail-back-btn {
@@ -76,6 +77,26 @@
   width: 80%;
   height: .5vh;
   background: linear-gradient(to right, var(--bg-color), var(--primary-color), var(--bg-color));
+}
+
+.titles-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.image {
+  width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .project-detail-image {
@@ -300,9 +321,23 @@
   .project-detail-image-wrapper {
     height: 280px;
   }
+  .project-detail-technologies {
+    justify-content: center;
+  }
 
   .project-detail-title {
     font-size: 1.75rem;
+    text-align: center;
+  }
+  .project-detail-subtitle {
+    text-align: center;
+  }
+
+  .titles-container {
+    flex-direction: column;
+  }
+  .image {
+    width: 100%;
   }
 
   .project-detail-tech-tag {

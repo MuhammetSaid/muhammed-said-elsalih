@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './Projects.css'
-import projectImage from '../../assets/images/Gemini_Generated_Image_1lbnv41lbnv41lbn.png'
+import projectImage from '../../assets/images/the_imam.png'
 import masterImage from '../../assets/images/math.png'
 import vortezImage from '../../assets/images/vorteza2.png'
 import chatbotsImage from '../../assets/images/chatbots.png'
@@ -94,8 +94,8 @@ const Projects = () => {
         <div className="hh-line" style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
           <div className="projects-line" style={{width:"100px", height:"1px", backgroundColor:"var(--text-color-secondary)", marginBottom:"10px", marginTop: "4px"}}></div>
         </div>
-        <p style={{textAlign:"center", color:"var(--text-color-secondary)"}}>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-        <p style={{textAlign:"center", color:"var(--text-color-secondary)"}}>Lorem ipsum, dolor sit amet consectetur elit. ipsum, dolor sit amet consectetur elit.</p>
+        <p style={{textAlign:"center", color:"var(--text-color-secondary)"}}>A selection of projects showcasing my experience in Generative AI, backend development, and full-stack applications.</p>
+        <p style={{textAlign:"center", color:"var(--text-color-secondary)"}}>Each project focuses on real-world problems, scalability, and clean engineering practices.</p>
         
         <div className="projects-grid">
           {displayedProjects.map((project) => (
