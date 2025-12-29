@@ -5,6 +5,7 @@ import { FaMapMarkerAlt, FaLinkedin, FaGithub, FaInstagram, FaTwitter, FaFaceboo
 import { MdWork } from "react-icons/md";
 import { SiLeetcode } from "react-icons/si";
 import profileImage from '../../assets/images/ben.jpeg'
+import cvPdf from '../../assets/cv/Muhammed_Said_Elsalih.pdf'
 
 const Hero = () => {
   const texts = ['Gen AI Developer','Full Stack Developer', 'Mobile Developer', 'Freelancer']
@@ -46,6 +47,15 @@ const Hero = () => {
     }
   }, [currentText, currentTextIndex, isDeleting, typingSpeed, texts])
 
+  const handleDownloadCV = () => {
+    const link = document.createElement('a')
+    link.href = cvPdf
+    link.download = 'muhammed_said_elsalih.pdf'
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
+
   return (
     <section id="hero" className="hero">
         <header className="hero-header">
@@ -59,7 +69,7 @@ const Hero = () => {
               <span className="typing-text">{currentText}</span>
               <span className="typing-cursor">|</span>
             </h2>
-            <p className="hero-content-left-bio">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut modi nemo non cumque dolor? Asperiores voluptas quod at voluptatibus temporibus, quidem eius omnis consequuntur reiciendis, autem laudantium aut. At aspernatur, qui beatae facere placeat enim eius similique fugiat illum sunt.</p>
+            <p className="hero-content-left-bio">I develop scalable, intelligent, and user-focused solutions using GenAI-based applications and modern web technologies. With a strong focus on clean architecture, high performance, and sustainable code, I aim to transform ideas into powerful and impactful digital products.</p>
             <div className="konum-state">
               <div className="konum">
                 <FaMapMarkerAlt />
@@ -72,7 +82,7 @@ const Hero = () => {
             </div>
 
             <div className="hero-content-left-buttons">
-              <button className="hero-content-left-button">Download CV</button>
+              <button className="hero-content-left-button" onClick={handleDownloadCV}>Download CV</button>
               <button className="hero-content-left-button">Contact Me</button>
             </div>
 

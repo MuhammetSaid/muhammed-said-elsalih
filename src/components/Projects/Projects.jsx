@@ -3,6 +3,9 @@ import { useNavigate } from 'react-router-dom'
 import './Projects.css'
 import projectImage from '../../assets/images/Gemini_Generated_Image_1lbnv41lbnv41lbn.png'
 import masterImage from '../../assets/images/math.png'
+import vortezImage from '../../assets/images/vorteza2.png'
+import chatbotsImage from '../../assets/images/chatbots.png'
+import hidrojenImage from '../../assets/images/hidrojen.png'
 const Projects = () => {
   const navigate = useNavigate()
   const [showMore, setShowMore] = useState(false)
@@ -45,9 +48,9 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: "Task Management App",
-      description: "Takım çalışması için geliştirilmiş görev yönetim uygulaması. Proje takibi, zaman yönetimi ve işbirliği özellikleri ile verimliliği artırır.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800",
+      title: "VortezaERP - ERP Sistemi",
+      description: "VortezaERP, bir ERP (Enterprise Resource Planning) sistemidir. ERP sistemleri, bir şirketin tüm işlemlerini yönetmek için kullanılan sistemlerdir. ",
+      image: vortezImage,
       technologies: ["Vue.js", "Express", "PostgreSQL"],
       link: "#",
       github: "#"
@@ -57,9 +60,9 @@ const Projects = () => {
   const horizontalProjects = [
     {
       id: 4,
-      title: "Portfolio Website",
+      title: "Aiksir Chat - Özelleştirilebilir akıllı Chatbot",
       description: "Kişisel portföy web sitesi. Modern tasarım, responsive yapı ve performans odaklı geliştirme ile oluşturulmuş profesyonel bir web sitesi.",
-      image: projectImage,
+      image: chatbotsImage,
       technologies: ["React", "CSS3", "JavaScript"],
       link: "#",
       github: "#"
@@ -68,7 +71,7 @@ const Projects = () => {
       id: 5,
       title: "Weather App",
       description: "Gerçek zamanlı hava durumu uygulaması. Kullanıcı dostu arayüz ve detaylı hava durumu bilgileri sunan modern bir mobil uygulama.",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=800",
+      image: hidrojenImage,
       technologies: ["React Native", "API", "TypeScript"],
       link: "#",
       github: "#"
