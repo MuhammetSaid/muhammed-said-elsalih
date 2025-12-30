@@ -512,6 +512,466 @@ export const projects = {
         }
       },
     ],
+    english_blocks: [
+      {
+        state: "Text",
+        content: [
+          {
+            "type": "normal",
+            "content": "Combining religious content with modern technologies, "
+          },
+          {
+            "type": "bold",
+            "content": "The Imam"
+          },
+          {
+            "type": "normal",
+            "content": " is an innovative mobile application that enables users to quickly access accurate information from Islamic sources. This project brings together traditional religious texts and artificial intelligence using "
+          },
+          {
+            "type": "bold",
+            "content": "Retrieval Augmented Generation (RAG) "
+          },
+          {
+            "type": "normal",
+            "content": "technology. RAG is an approach that allows AI to learn from knowledge sources and answer user questions by providing source references."
+          },
+        ],
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+
+      {
+        state: "image",
+        content: [
+          theImam1,
+          theImam2,
+          theImam3,
+        ],
+        style: {
+          display: 'flex',
+          justifyContent: 'center',
+          margin: '1.4rem 0',
+          gap: '3rem',
+        },
+        image_style: {
+          width: '250px',
+          objectFit: 'cover',
+          borderRadius: '10px',
+        },
+      },
+
+      {
+        state: "Title",
+        content: {
+          "normal": "About the Project",
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '2rem',
+          marginTop: '1.4rem',
+          color: 'var(--text-color)',
+        }
+      },
+      {
+        state: "Text",
+        content: {
+          "bold": "The Imam",
+          "normal": " is an AI assistant that indexes a comprehensive collection of Islamic sources using a vector-based search system, providing source-referenced answers to user questions. The application has a comprehensive database including the Holy Quran, Tafsir books, Fiqh works, and other important Islamic sources. It has been developed using modern AI tools such as OpenAI embeddings, ChromaDB, and LangChain/LangGraph."
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+
+      {
+        state: "Title",
+        content: {
+          "normal": "Key Features",
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '2rem',
+          color: 'var(--text-color)',
+          marginTop: "1.4rem"
+        }
+      },
+
+      {
+        state: "list",
+        content: {
+          "items": [
+            {
+              "type": "normal",
+              "content": "🤖 AI-Powered Chat: Intelligent assistant that answers user questions from the Quran, Tafsir, Fiqh, and other Islamic sources"
+            },
+            {
+              "type": "normal",
+              "content": "📚 Source References: Relevant surah and verse references for each answer"
+            },
+            {
+              "type": "normal",
+              "content": "🔍 Semantic Search: Finding the most relevant content through meaning-based vector search"
+            },
+            {
+              "type": "normal",
+              "content": "💬 Chat History: Saving and managing user conversations in MySQL database"
+            },
+            {
+              "type": "normal",
+              "content": "🔐 JWT Authentication: Secure token-based user authentication"
+            },
+            {
+              "type": "normal",
+              "content": "📱 Modern Mobile Interface: User-friendly design developed with Flutter"
+            }
+          ]
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+          marginLeft: '40px',
+        }
+      },
+      
+      // Line
+      {
+        state: "line",
+        style: {
+          width: '100%',
+          height: '1px',
+          backgroundColor: 'var(--text-color)',
+          marginTop: '1.4rem',
+          marginBottom: '1.4rem',
+        }
+      },
+
+      {
+        state: "image",
+        content: [
+          theImam4,
+          theImam5,
+          theImam6,
+          theImam7,
+        ],
+        style: {
+          display: 'flex',
+          justifyContent: 'center',
+          margin: '1.4rem 0',
+          gap: '3rem',
+        },
+        image_style: {
+          width: '250px',
+          objectFit: 'cover',
+          borderRadius: '10px',
+        },
+      },
+
+      // Line
+      {
+        state: "line",
+        style: {
+          width: '100%',
+          height: '1px',
+          backgroundColor: 'var(--text-color)',
+          marginTop: '1.4rem',
+          marginBottom: '1.4rem',
+        }
+      },
+
+      // Title
+      {
+        state: "Title",
+        content: {
+          "normal": "How It Works?",
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '2rem',
+          color: 'var(--text-color)',
+          marginTop: "1.4rem"
+        }
+      },
+
+      {
+        state: "Text",
+        content: [
+          {
+            "type": "normal",
+            "content": "The Imam consists of two main components: "
+          },
+          {
+            "type": "bold",
+            "content": "mobile application"
+          },
+          {
+            "type": "normal",
+            "content": " (developed with Flutter) and "
+          },
+          {
+            "type": "bold",
+            "content": "server-side "
+          },
+          {
+            "type": "normal",
+            "content": "(written in Python)."
+          },
+        ],
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+
+      {
+        state: "Title",
+        content: {
+          "normal": "Server Side (Backend)",
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '2rem',
+          color: 'var(--text-color)',
+          marginTop: "1.4rem"
+        }
+      },
+
+      {
+        state: "Text",
+        content: [
+          {
+            "type": "normal",
+            "content": "The backend was developed with "
+          },
+          {
+            "type": "bold",
+            "content": "Python"
+          },
+          {
+            "type": "normal",
+            "content": " and the "
+          },
+          {
+            "type": "bold",
+            "content": "FastAPI"
+          },
+          {
+            "type": "normal",
+            "content": " framework. The system takes user questions, searches in Islamic sources, and prepares answers. It essentially follows these steps:"
+          },
+        ],
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+
+      {
+        state: "list",
+        content: {
+          "items": [
+            {
+              "type": "normal",
+              "content": "Vectorization (Embedding): All Islamic texts (Quran, Tafsir, Fiqh, etc.) are converted to vectors using OpenAI's text-embedding-3-large model. This process converts texts into numerical values to make them understandable by computers. Long texts are divided into approximately 50,000 character chunks using RecursiveCharacterTextSplitter. This chunking process is necessary to avoid exceeding OpenAI's token limits and to enable more efficient searching."
+            },
+            {
+              "type": "normal",
+              "content": "Vector Database (ChromaDB): Vectorized texts are stored in a special vector database called ChromaDB. Each text chunk is stored with metadata showing which surah, verse, or book it came from."
+            },
+            {
+              "type": "normal",
+              "content": "Semantic Search (Meaning-Based Search): When a user asks a question, the system first vectorizes the question, then finds the 3 most relevant sources in ChromaDB using cosine similarity. This search method looks at the meaning of texts, unlike traditional word matching."
+            },
+            {
+              "type": "normal",
+              "content": "LLM Answer Generation: The found sources are sent to the GPT-4o-mini model as context, and an appropriate answer is generated for the user's question. LangChain and LangGraph libraries manage this process and ensure that the AI agent uses the sources correctly."
+            }
+          ]
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+          marginLeft: '40px',
+          listStyle: 'decimal',
+        }
+      },
+      {
+        state: "Title",
+        content: {
+          "normal": "Mobile Application (Frontend)",
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '2rem',
+          color: 'var(--text-color)',
+          marginTop: "1.4rem"
+        }
+      },
+      
+      {
+        state: "Text",
+        content: [
+          {
+            "type": "normal",
+            "content": "The mobile application was developed with the "
+          },
+          {
+            "type": "bold",
+            "content": "Flutter "
+          },
+          {
+            "type": "normal",
+            "content": "framework. It was written using the "
+          },
+          {
+            "type": "bold",
+            "content": "Dart "
+          },
+          {
+            "type": "normal",
+            "content": "programming language and designed according to "
+          },
+          {
+            "type": "bold",
+            "content": "Material Design 3 "
+          },
+          {
+            "type": "normal",
+            "content": "principles. The application communicates with the backend via "
+          },
+          {
+            "type": "bold",
+            "content": "RESTful API. "
+          },
+          {
+            "type": "normal",
+            "content": "Users can:"
+          },
+        ],
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+      {
+        state: "list",
+        content: {
+          "items": [
+            {
+              "type": "normal",
+              "content": "Write their questions"
+            },
+            {
+              "type": "normal",
+              "content": "Receive answers instantly"
+            },
+            {
+              "type": "normal",
+              "content": "Click on source links to navigate to relevant sections"
+            },
+            {
+              "type": "normal",
+              "content": "View previous conversations stored locally using SharedPreferences"
+            }
+          ]
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+          marginLeft: '40px',
+        }
+      },
+      {
+        state: "line",
+        style: {
+          width: '100%',
+          height: '1px',
+          backgroundColor: 'var(--text-color)',
+          marginTop: '1.4rem',
+          marginBottom: '1.4rem',
+        }
+      },
+      {
+        state: "Title",
+        content: {
+          "normal": "RAG Pipeline: Process Flow",
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '2rem',
+          color: 'var(--text-color)',
+          marginTop: "1.4rem"
+        }
+      },
+      {
+        state: "Text",
+        content: [
+          {
+            "type": "normal",
+            "content": "The system works using the "
+          },
+          {
+            "type": "bold",
+            "content": "RAG (Retrieval Augmented Generation) "
+          },
+          {
+            "type": "normal",
+            "content": "approach. This process consists of the following steps:"
+          }
+        ],
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+
+      {
+        state: "list",
+        content: {
+          "items": [
+            {
+              "type": "normal",
+              "content": "Indexing: All Islamic texts are read from JSON format, divided into chunks using text chunking, and vectorized using the OpenAI embeddings API. Metadata (surah number, verse numbers, source information) is stored for each chunk."
+            },
+            {
+              "type": "normal",
+              "content": "Query Processing: When a user asks a question, the question is also vectorized in the same way."
+            },
+            {
+              "type": "normal",
+              "content": "Retrieval: A similarity search is performed in ChromaDB to find the 3 most relevant documents. This operation is performed using the cosine similarity metric."
+            },
+            {
+              "type": "normal",
+              "content": "Generation: The found sources are sent to the GPT-4o-mini model as context via LangChain. The model uses these sources to create an answer to the user's question."
+            },
+            {
+              "type": "normal",
+              "content": "Response: The answer is returned to the user along with source metadata. In the frontend, these sources are displayed as clickable links."
+            }
+          ]
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+          marginLeft: '40px',
+          listStyle: 'decimal',
+        }
+      },
+    ],
     image: theImamImage,
     description: "İslam şeriati konularında kullanıcılara yardımcı olmak için geliştirilmiş modern bir mobil uygulama. Kullanıcılar İslami hukuk konularında sorular sorabilir ve detaylı cevaplar alabilirler.",
     technologies: ["FastAPI", "LangChain", "Flutter", "MySQL"],
@@ -1821,6 +2281,854 @@ export const projects = {
             {
               "type": "normal",
               "content": "Sistem bu anlamda sadece kullanıcı yönetimi değil, aynı zamanda kurumsal rol bazlı kontrol mekanizması da sunuyor."
+            }
+          ]
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+          marginLeft: '40px',
+        }
+      },
+      {
+        state: "image",
+        content: [
+          vorteza19,
+          vorteza20,
+          vorteza21,
+        ],
+        style: {
+          display: 'flex',
+          justifyContent: 'center',
+          margin: '1.4rem 0',
+          gap: '3rem',
+        },
+        image_style: {
+          width: '400px',
+          objectFit: 'cover',
+          borderRadius: '10px',
+        },
+      },
+      
+      
+      {
+        state: "line",
+        style: {
+          width: '100%',
+          height: '1px',
+          backgroundColor: 'var(--text-color)',
+          marginTop: '1.4rem',
+          marginBottom: '1.4rem',
+        }
+      },
+    ],
+    english_blocks: [
+      {
+        state: "Text",
+        content: [
+          {
+            "type": "normal",
+            "content": "Vorteza ERP, which we developed as part of the \"Software Engineering\" course, became much more than a course project. This web-based ERP system, developed with modern software architectures, aimed to provide solutions to real-world corporate needs. In this article, I share in detail each module of Vorteza ERP, the technologies used, and our development processes. Press enter or click to view image in full size"
+          },
+        ],
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+      {
+        state: "image",
+        content: [
+          vorteza1,
+          vorteza5,
+          vorteza2,
+        ],
+        style: {
+          display: 'flex',
+          justifyContent: 'center',
+          margin: '1.4rem 0',
+          gap: '3rem',
+        },
+        image_style: {
+          width: '250px',
+          objectFit: 'cover',
+          borderRadius: '10px',
+        },
+      },
+      {
+        state: "Title",
+        content: {
+          "normal": "Why Vorteza ERP?",
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '2rem',
+          marginTop: '1.4rem',
+          color: 'var(--text-color)',
+        }
+      },
+      {
+        state: "Text",
+        content: {
+          "normal": "Today, the need for flexible, secure, and modular ERP solutions that meet the growing needs of small, medium, and large-scale businesses is increasing day by day. Inspired by this need, we aimed to develop a user-friendly, integrated system that would facilitate business processes. In this system, we have created a real product that contains not only theoretical knowledge but also features that can be used in practice."
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+
+      {
+        state: "Title",
+        content: {
+          "normal": "System Architecture and General Features",
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '2rem',
+          color: 'var(--text-color)',
+          marginTop: "1.4rem"
+        }
+      },
+
+      {
+        state: "Text",
+        content: [
+          {
+            "type": "normal",
+            "content": "Vorteza ERP was developed with a modular structure. This way, each module can work independently while also functioning seamlessly integrated with the system. The system includes publicly accessible sections such as the main page, blog, help, pricing, and contact."
+          }
+        ],
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+      {
+        state: "bosluk",
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },  
+      {
+        state: "Text",
+        content: [
+          {
+            "type": "normal",
+            "content": "We developed our user-friendly interface with a modern UI/UX approach. Especially the combination of React.js and Bootstrap offered a simple but functional appearance. On the security side, we used JWT (JSON Web Token) technology for user logins. Passwords are stored encrypted and system security is provided with user-specific tokens."
+          }
+        ],
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+
+      {
+        state: "Title",
+        content: {
+          "normal": "Communication and Chatbot Integration",
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '2rem',
+          color: 'var(--text-color)',
+          marginTop: "1.4rem"
+        }
+      },
+
+      {
+        state: "Text",
+        content: [
+          {
+            "type": "normal",
+            "content": "The communication part of our ERP system was developed as a bidirectional system. On one hand, users can contact us directly, and on the other hand, they can receive instant support through the chatbot."
+          }
+        ],
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+      {
+        state: "bosluk",
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+
+      {
+        state: "Text",
+        content: [
+          {
+            "type": "normal",
+            "content": "Messages sent through the \"Ask a Human\" feature are received at our email address via PHP Mailer."
+          }
+        ],
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+      {
+        state: "bosluk",
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+
+      {
+        state: "Text",
+        content: [
+          {
+            "type": "normal",
+            "content": "On the chatbot side, we offer an AI-powered intelligent support system with RAG (Retrieval-Augmented Generation) architecture integrated with LangChain and OpenAI API. This bot automatically answers frequently asked questions by staff and provides documentation support."
+          }
+        ],
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+      
+      // Line
+      {
+        state: "line",
+        style: {
+          width: '100%',
+          height: '1px',
+          backgroundColor: 'var(--text-color)',
+          marginTop: '1.4rem',
+          marginBottom: '1.4rem',
+        }
+      },
+
+      // Title
+      {
+        state: "Title",
+        content: {
+          "normal": "Dashboard and Statistics Module",
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '2rem',
+          color: 'var(--text-color)',
+          marginTop: "1.4rem"
+        }
+      },
+
+      
+
+      {
+        state: "Text",
+        content: [
+          {
+            "type": "normal",
+            "content": "The first page that welcomes logged-in users is the dashboard panel. This panel includes business-specific:"
+          }
+        ],
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+      
+      {
+        state: "list",
+        content: {
+          "items": [
+            {
+              "type": "normal",
+              "content": "Daily / Monthly sales"
+            },
+            {
+              "type": "normal",
+              "content": "Active customer count"
+            },
+            {
+              "type": "normal",
+              "content": "Task status and staff performance"
+            },
+          ]
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+          marginLeft: '40px',
+        }
+      },
+      
+      {
+        state: "Text",
+        content: [
+          {
+            "type": "normal",
+            "content": "such data are presented with dynamic charts using ECharts.js and Chart.js. This way, users can quickly and meaningfully access their data visually."
+          }
+        ],
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+      {
+        state: "image",
+        content: [
+          vorteza4,
+        ],
+        style: {
+          display: 'flex',
+          justifyContent: 'center',
+          margin: '1.4rem 0',
+          gap: '3rem',
+        },
+        image_style: {
+          width: '250px',
+          objectFit: 'cover',
+          borderRadius: '10px',
+        },
+      },
+      {
+        state: "line",
+        style: {
+          width: '100%',
+          height: '1px',
+          backgroundColor: 'var(--text-color)',
+          marginTop: '1.4rem',
+          marginBottom: '1.4rem',
+        }
+      },
+
+      {
+        state: "Title",
+        content: {
+          "normal": "CRM Module",
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '2rem',
+          color: 'var(--text-color)',
+          marginTop: "1.4rem"
+        }
+      },
+
+      {
+        state: "Text",
+        content: [
+          {
+            "type": "normal",
+            "content": "Every business wants to organize their interactions with customers into a regular structure. Our CRM module addresses this need:"
+          }
+        ],
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+      {
+        state: "list",
+        content: {
+          "items": [
+            {
+              "type": "normal",
+              "content": "Customers can be tracked stage by stage (potential, offer, agreement, post-sale, etc.)."
+            },
+            {
+              "type": "normal",
+              "content": "Data tracking has been greatly facilitated with dynamic filtering and custom view options."
+            },
+            {
+              "type": "normal",
+              "content": "Thanks to its modern interface and industry compatibility, we offer an experience similar to real-world CRM systems."
+            },
+          ]
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+          marginLeft: '40px',
+        }
+      },
+
+      {
+        state: "image",
+        content: [
+          vorteza6,
+          vorteza7,
+        ],
+        style: {
+          display: 'flex',
+          justifyContent: 'center',
+          margin: '1.4rem 0',
+          gap: '3rem',
+        },
+        image_style: {
+          width: '400px',
+          objectFit: 'cover',
+          borderRadius: '10px',
+        },
+      },
+      {
+        state: "line",
+        style: {
+          width: '100%',
+          height: '1px',
+          backgroundColor: 'var(--text-color)',
+          marginTop: '1.4rem',
+          marginBottom: '1.4rem',
+        }
+      },
+
+      {
+        state: "Title",
+        content: {
+          "normal": "Task Management (To-Do) Module",
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '2rem',
+          color: 'var(--text-color)',
+          marginTop: "1.4rem"
+        }
+      },
+
+      {
+        state: "Text",
+        content: [
+          {
+            "type": "normal",
+            "content": "Task distribution and tracking of personnel within a business is very important. In the Task Management module we developed for this purpose:"
+          }
+        ],
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+      {
+        state: "list",
+        content: {
+          "items": [
+            {
+              "type": "normal",
+              "content": "Each task can be defined with a deadline and responsible staff member."
+            },
+            {
+              "type": "normal",
+              "content": "Tasks can be grouped into \"communities\"."
+            },
+            {
+              "type": "normal",
+              "content": "Discussions can be held with a special comment section for each task community."
+            },
+            {
+              "type": "normal",
+              "content": "Thanks to this structure, team interaction and responsibility sharing can be clearly organized."
+            },
+          ]
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+          marginLeft: '40px',
+        }
+      },
+      {
+        state: "image",
+        content: [
+          vorteza8,
+          vorteza9,
+          vorteza10,
+          vorteza11,
+        ],
+        style: {
+          display: 'flex',
+          justifyContent: 'center',
+          margin: '1.4rem 0',
+          gap: '3rem',
+        },
+        image_style: {
+          width: '400px',
+          objectFit: 'cover',
+          borderRadius: '10px',
+        },
+      },
+      {
+        state: "line",
+        style: {
+          width: '100%',
+          height: '1px',
+          backgroundColor: 'var(--text-color)',
+          marginTop: '1.4rem',
+          marginBottom: '1.4rem',
+        }
+      },
+
+      {
+        state: "Title",
+        content: {
+          "normal": "Marketing Module",
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '2rem',
+          color: 'var(--text-color)',
+          marginTop: "1.4rem"
+        }
+      },
+
+      {
+        state: "Text",
+        content: [
+          {
+            "type": "normal",
+            "content": "We developed a marketing module for businesses to launch campaigns and reach their target audience. Here, the business owner:"
+          }
+        ],
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+      {
+        state: "list",
+        content: {
+          "items": [
+            {
+              "type": "normal",
+              "content": "Can determine campaign title, description, and target conditions."
+            },
+            {
+              "type": "normal",
+              "content": "This campaign is automatically sent to customers via email."
+            },
+            {
+              "type": "normal",
+              "content": "With this module, the ERP system has become not only an internal management tool but also an outward-facing marketing support."
+            }
+          ]
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+          marginLeft: '40px',
+        }
+      },
+      {
+        state: "image",
+        content: [
+          vorteza12,
+          vorteza13,
+        ],
+        style: {
+          display: 'flex',
+          justifyContent: 'center',
+          margin: '1.4rem 0',
+          gap: '3rem',
+        },
+        image_style: {
+          width: '400px',
+          objectFit: 'cover',
+          borderRadius: '10px',
+        },
+      },
+      {
+        state: "line",
+        style: {
+          width: '100%',
+          height: '1px',
+          backgroundColor: 'var(--text-color)',
+          marginTop: '1.4rem',
+          marginBottom: '1.4rem',
+        }
+      },
+
+      {
+        state: "Title",
+        content: {
+          "normal": "Chatbot Module (AI)",
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '2rem',
+          color: 'var(--text-color)',
+          marginTop: "1.4rem"
+        }
+      },
+
+      {
+        state: "Text",
+        content: [
+          {
+            "type": "normal",
+            "content": "This module was developed as one of the most innovative parts of the system. It consists of two parts:"
+          }
+        ],
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+      {
+        state: "Text",
+        content: [
+          {
+            "type": "bold",
+            "content": "User Chatbot on Help Page:"
+          }
+        ],
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+      
+      {
+        state: "list",
+        content: {
+          "items": [
+            {
+              "type": "normal",
+              "content": "A system that quickly answers simple user questions and provides help and guidance."
+            }
+          ]
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+          marginLeft: '40px',
+        }
+      },
+      {
+        state: "bosluk",
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      }, 
+      {
+        state: "Text",
+        content: [
+          {
+            "type": "bold",
+            "content": "AI Chatbot (with RAG Architecture):"
+          }
+        ],
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+      
+      {
+        state: "list",
+        content: {
+          "items": [
+            {
+              "type": "normal",
+              "content": "This module was specially developed and uses a RAG (Retrieval-Augmented Generation) architecture that works based on system documentation."
+            },
+            {
+              "type": "normal",
+              "content": "It was developed with LangChain and OpenAI API integration."
+            },
+            {
+              "type": "normal",
+              "content": "Currently, it generates responses from fixed documentation, but in the future, we aim to provide great convenience to staff by offering real-time content through direct database connection. Press enter or click to view image in full size"
+            }
+          ]
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+          marginLeft: '40px',
+        }
+      }, 
+
+      {
+        state: "image",
+        content: [
+          vorteza14,
+          vorteza15,
+        ],
+        style: {
+          display: 'flex',
+          justifyContent: 'center',
+          margin: '1.4rem 0',
+          gap: '3rem',
+        },
+        image_style: {
+          width: '400px',
+          objectFit: 'cover',
+          borderRadius: '10px',
+        },
+      },
+      {
+        state: "line",
+        style: {
+          width: '100%',
+          height: '1px',
+          backgroundColor: 'var(--text-color)',
+          marginTop: '1.4rem',
+          marginBottom: '1.4rem',
+        }
+      },
+
+      {
+        state: "Title",
+        content: {
+          "normal": "Shipping Module",
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '2rem',
+          color: 'var(--text-color)',
+          marginTop: "1.4rem"
+        }
+      },
+
+      {
+        state: "list",
+        content: {
+          "items": [
+            {
+              "type": "normal",
+              "content": "Creating new shipment"
+            },
+            {
+              "type": "normal",
+              "content": "Updating and deleting shipments"
+            },
+            {
+              "type": "normal",
+              "content": "Shipment status tracking and transaction history"
+            }
+          ]
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+          marginLeft: '40px',
+        }
+      },
+
+      {
+        state: "Text",
+        content: [
+          {
+            "type": "normal",
+            "content": "Thanks to our shipping module, businesses can manage shipping processes in detail through the system. While the shipment creation screen includes fields such as recipient information, shipping address, and shipment content, each transaction is recorded and logged separately. This increases both security and traceability."
+          }
+        ],
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+
+      {
+        state: "image",
+        content: [
+          vorteza16,
+          vorteza17,
+          vorteza18,
+        ],
+        style: {
+          display: 'flex',
+          justifyContent: 'center',
+          margin: '1.4rem 0',
+          gap: '3rem',
+        },
+        image_style: {
+          width: '400px',
+          objectFit: 'cover',
+          borderRadius: '10px',
+        },
+      },
+      {
+        state: "line",
+        style: {
+          width: '100%',
+          height: '1px',
+          backgroundColor: 'var(--text-color)',
+          marginTop: '1.4rem',
+          marginBottom: '1.4rem',
+        }
+      },
+
+      {
+        state: "Title",
+        content: {
+          "normal": "Staff and Settings Module",
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '2rem',
+          color: 'var(--text-color)',
+          marginTop: "1.4rem"
+        }
+      },
+
+      {
+        state: "Text",
+        content: [
+          {
+            "type": "normal",
+            "content": "We developed a Settings panel so that business owners can easily perform authorization and management operations. From this panel:"
+          }
+        ],
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+      {
+        state: "list",
+        content: {
+          "items": [
+            {
+              "type": "normal",
+              "content": "Staff addition, deletion, and update operations can be performed."
+            },
+            {
+              "type": "normal",
+              "content": "Authority levels and roles can be determined."
+            },
+            {
+              "type": "normal",
+              "content": "In this sense, the system offers not only user management but also an enterprise role-based control mechanism."
             }
           ]
         },

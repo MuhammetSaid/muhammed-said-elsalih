@@ -3,7 +3,102 @@ import { useEffect, useState } from 'react'
 import './ProjectDetail.css'
 import { projects } from '../../data/projects'
 import Header from '../Header/Header'
-import { FaLanguage, FaDownload, FaShare, FaQuestion, FaGithub, FaPlay, FaChevronLeft, FaChevronRight } from 'react-icons/fa'
+import { FaLanguage, FaDownload, FaShare, FaQuestion, FaGithub, FaPlay, FaChevronLeft, FaChevronRight, FaLinkedin, FaFacebook, FaWhatsapp, FaCopy, FaTimes, FaCheck } from 'react-icons/fa'
+
+// ShareModal Component
+const ShareModal = ({ isOpen, onClose, projectTitle, projectUrl, projectDescription }) => {
+  const [isCopied, setIsCopied] = useState(false)
+
+  useEffect(() => {
+    if (isCopied) {
+      const timer = setTimeout(() => {
+        setIsCopied(false)
+      }, 2000)
+      return () => clearTimeout(timer)
+    }
+  }, [isCopied])
+
+  if (!isOpen) return null
+
+  const encodedUrl = encodeURIComponent(projectUrl)
+  const encodedTitle = encodeURIComponent(projectTitle)
+  const shareText = projectDescription || `Check out this project: ${projectTitle}`
+  const encodedText = encodeURIComponent(shareText)
+  const encodedWhatsappText = encodeURIComponent(`Check out this project: ${projectTitle}\n\n${projectUrl}`)
+
+  const shareLinks = {
+    whatsapp: `https://wa.me/?text=${encodedWhatsappText}`,
+    facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}&quote=${encodedText}`,
+    linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}&summary=${encodedText}`,
+  }
+
+  const handleCopyLink = async () => {
+    try {
+      await navigator.clipboard.writeText(projectUrl)
+      setIsCopied(true)
+    } catch (err) {
+      // Fallback for older browsers
+      const textArea = document.createElement('textarea')
+      textArea.value = projectUrl
+      document.body.appendChild(textArea)
+      textArea.select()
+      document.execCommand('copy')
+      document.body.removeChild(textArea)
+      setIsCopied(true)
+    }
+  }
+
+  const handleShare = (platform) => {
+    window.open(shareLinks[platform], '_blank', 'width=600,height=400')
+  }
+
+  return (
+    <div className="share-modal-overlay" onClick={onClose}>
+      <div className="share-modal-content" onClick={(e) => e.stopPropagation()}>
+        <div className="share-modal-header">
+          <h3>Share</h3>
+          <button className="share-modal-close" onClick={onClose}>
+            <FaTimes />
+          </button>
+        </div>
+        <div className="share-modal-body">
+          <div className="share-modal-options">
+            <button 
+              className="share-modal-option" 
+              onClick={() => handleShare('whatsapp')}
+              title="Share on WhatsApp"
+            >
+              <FaWhatsapp />
+              <span>WhatsApp</span>
+            </button>
+            <button 
+              className="share-modal-option" 
+              onClick={() => handleShare('facebook')}
+              title="Share on Facebook"
+            >
+              <FaFacebook />
+              <span>Facebook</span>
+            </button>
+            <button 
+              className="share-modal-option" 
+              onClick={() => handleShare('linkedin')}
+              title="Share on LinkedIn"
+            >
+              <FaLinkedin />
+              <span>LinkedIn</span>
+            </button>
+          </div>
+          <div className="share-modal-copy">
+            <button className="share-modal-copy-btn" onClick={handleCopyLink}>
+              {isCopied ? <FaCheck /> : <FaCopy />}
+              <span>{isCopied ? 'Copied' : 'Copy Link'}</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
 
 // ImageSlider Component
 const ImageSlider = ({ images, projectTitle, blockStyle, imageStyle }) => {
@@ -75,10 +170,14 @@ const ProjectDetail = () => {
   const navigate = useNavigate()
   const project = projects[parseInt(id)]
   const [language, setLanguage] = useState("English")
+  const [isShareModalOpen, setIsShareModalOpen] = useState(false)
+  
   useEffect(() => {
     // Sayfa yüklendiğinde en üste kaydır
     window.scrollTo(0, 0)
   }, [id])
+
+  const currentUrl = window.location.href
 
   if (!project) {
     return (
@@ -120,13 +219,27 @@ const ProjectDetail = () => {
                     )
                   } else if (tech === "Share") {
                     return (
-                      <div className="project-detail-share-btn" style={{ cursor: 'pointer' }} key={index}>
+                      <div 
+                        className="project-detail-share-btn" 
+                        style={{ cursor: 'pointer' }} 
+                        onClick={() => setIsShareModalOpen(true)}
+                        key={index}
+                      >
                         <span className='project-detail-tech-tag'> <FaShare style={{ fontSize: '1rem' }} /> {tech}</span>
                       </div>
                     )
                   } else if (tech === "Ask Question") {
+                    const handleAskQuestion = () => {
+                      const message = encodeURIComponent(`Merhaba, "${project.title}" projesi hakkında bir sorum var.`)
+                      window.open(`https://wa.me/905370606607?text=${message}`, '_blank')
+                    }
                     return (
-                      <div className="project-detail-ask-question-btn" style={{ cursor: 'pointer' }} key={index}>
+                      <div 
+                        className="project-detail-ask-question-btn" 
+                        style={{ cursor: 'pointer' }} 
+                        onClick={handleAskQuestion}
+                        key={index}
+                      >
                         <span className='project-detail-tech-tag'> <FaQuestion style={{ fontSize: '1rem' }} /> {tech}</span>
                       </div>
                     )
@@ -158,7 +271,7 @@ const ProjectDetail = () => {
           </div>
 
           <div className="project-detail-description" >
-            {project.blocks.map((block, index) => {
+            {(language === "English" && project.english_blocks ? project.english_blocks : project.blocks).map((block, index) => {
               // Özel state kontrolleri önce yapılmalı
               if (block.state === "image") {
                 // Birden fazla resim varsa slider göster
@@ -271,6 +384,13 @@ const ProjectDetail = () => {
           </div>
         </div>
       </div>
+      <ShareModal 
+        isOpen={isShareModalOpen} 
+        onClose={() => setIsShareModalOpen(false)} 
+        projectTitle={project.title}
+        projectUrl={currentUrl}
+        projectDescription={project.description}
+      />
     </div>
   )
 }
