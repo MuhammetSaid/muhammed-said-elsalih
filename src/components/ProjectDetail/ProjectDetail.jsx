@@ -230,7 +230,7 @@ const ProjectDetail = () => {
                     )
                   } else if (tech === "Ask Question") {
                     const handleAskQuestion = () => {
-                      const message = encodeURIComponent(`Merhaba, "${project.title}" projesi hakkında bir sorum var.`)
+                      const message = encodeURIComponent(`Hello, I have a question about the "${project.title}" project.`)
                       window.open(`https://wa.me/905370606607?text=${message}`, '_blank')
                     }
                     return (
