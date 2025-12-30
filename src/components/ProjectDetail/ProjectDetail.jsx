@@ -1,4 +1,4 @@
-import { useParams, useNavigate } from 'react-router-dom'
+import { useParams, useNavigate, useLocation } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import './ProjectDetail.css'
 import { projects } from '../../data/projects'
@@ -168,6 +168,7 @@ const ImageSlider = ({ images, projectTitle, blockStyle, imageStyle }) => {
 const ProjectDetail = () => {
   const { id } = useParams()
   const navigate = useNavigate()
+  const location = useLocation()
   const project = projects[parseInt(id)]
   const [language, setLanguage] = useState("English")
   const [isShareModalOpen, setIsShareModalOpen] = useState(false)
@@ -177,7 +178,17 @@ const ProjectDetail = () => {
     window.scrollTo(0, 0)
   }, [id])
 
-  const currentUrl = window.location.href
+  // Production URL'i kullan (localhost ise production domain'i ile değiştir)
+  const getProjectUrl = () => {
+    const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+    if (isLocalhost) {
+      // Production domain'i kullan
+      return `https://muhammed-said-elsalih.vercel.app${location.pathname}`
+    }
+    return window.location.href
+  }
+  
+  const currentUrl = getProjectUrl()
 
   if (!project) {
     return (
