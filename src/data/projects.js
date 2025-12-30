@@ -981,32 +981,77 @@ export const projects = {
   },
   2: {
     id: 2,
-    title: "Nexora - Math ",
+    title: "Nexora Math: Zeka Sorularıyla Beyin Antrenmanı Yapan Bir Oyun Deneyimi",
     subtitle: "Software and Artificial Intelligence",
     buttons: [ "Language", "Download", "Share", "Ask Question", "GitHub", "Demo"],
     blocks: [
+       // Title
+      {
+        state: "Title",
+        content: {
+          "normal": "Giriş: Problem Çözme Becerisi Neden Bu Kadar Önemli?",
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '2rem',
+          marginTop: '1.4rem',
+          color: 'var(--text-color)',
+        }
+      },
+       // Text Tek
+      {
+        state: "Text",
+        content: {
+          "normal": "Günlük hayatımızda sürekli problemlerle karşılaşıyoruz. İş yerinde karmaşık durumları çözmek, kişisel hayatımızda mantıklı kararlar vermek, yeni teknolojileri anlamak... Tüm bunlar için güçlü bir problem çözme becerisine ihtiyacımız var. Ancak bu beceri, doğuştan gelen bir yetenek değil; geliştirilebilir bir zihinsel kas."
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+      {
+        state: "bosluk",
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+      // Text Tek
+      {
+        state: "Text",
+        content: {
+          "normal": "Zeka soruları, mantık bulmacaları ve IQ testleri, beynimizi antrenman yaptıran en etkili yöntemlerden biridir. Bu tür sorular, sadece \"doğru cevabı bulmak\" değil; düşünme sürecini geliştirmek, analitik becerileri güçlendirmek ve yaratıcı çözümler bulmak için tasarlanmıştır. Ancak çoğu zeka soruları uygulaması, kullanıcıya sadece soruları sunar ve pasif bir deneyim sunar."
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+      {
+        state: "bosluk",
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
       {
         state: "Text",
         content: [
           {
             "type": "normal",
-            "content": "Modern teknolojilerle dini içerikleri birleştiren"
+            "content": "İşte bu düşünceyle yola çıktık ve "
           },
           {
             "type": "bold",
-            "content": " The Imam"
+            "content": "Nexora Math"
           },
           {
             "type": "normal",
-            "content": ", kullanıcıların İslami kaynaklardan doğru bilgilere hızlıca ulaşmasını sağlayan yenilikçi bir mobil uygulama. Bu proje, "
-          },
-          {
-            "type": "bold",
-            "content": "Retrieval Augmented Generation (RAG) "
-          },
-          {
-            "type": "normal",
-            "content": "teknolojisini kullanarak, geleneksel dini metinleri yapay zeka ile buluşturuyor. RAG, yapay zekanın bilgi kaynaklarından öğrenmesini ve kullanıcı sorularına kaynak göstererek cevap vermesini sağlayan bir yaklaşım."
+            "content": "'i geliştirdik. Nexora Math, zeka sorularını çözmeyi eğlenceli bir oyun deneyimine dönüştürmeyi amaçlayan, modern teknolojilerle geliştirilmiş bir mobil uygulama. Ancak bu sadece bir zeka soruları uygulaması değil; yapay zeka destekli bir rakip, seviye bazlı ilerleme sistemi ve gerçekçi rekabet mekanizmalarıyla donatılmış kapsamlı bir beyin antrenman platformu."
           },
         ],
         style: {
@@ -1015,31 +1060,44 @@ export const projects = {
           color: 'var(--text-color)',
         }
       },
-
       {
-        state: "image",
-        content: [
-          nexoraMath1,
-          nexoraMath2,
-          nexoraMath3,
-        ],
+        state: "line",
         style: {
-          display: 'flex',
-          justifyContent: 'center',
-          margin: '1.4rem 0',
-          gap: '3rem',
-        },
-        image_style: {
-          width: '250px',
-          objectFit: 'cover',
-          borderRadius: '10px',
-        },
+          width: '100%',
+          height: '1px',
+          backgroundColor: 'var(--text-color)',
+          marginTop: '1.4rem',
+          marginBottom: '1.4rem',
+        }
       },
-
       {
         state: "Title",
         content: {
-          "normal": "Proje Hakkında",
+          "normal": "Nexora Math Nedir?",
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '2rem',
+          marginTop: '1.4rem',
+          color: 'var(--text-color)',
+        }
+      },
+      // Text Tek
+      {
+        state: "Text",
+        content: {
+          "normal": "Nexora Math, kullanıcıların zeka sorularını çözerek seviye atladıkları, yapay zeka destekli bir bot ile rekabet edebildikleri ve çeşitli oyun modlarında eğlenerek problem çözme becerilerini geliştirdikleri bir mobil uygulamadır. Ancak bu tanım, uygulamanın gerçek değerini tam olarak yansıtmıyor."
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+      {
+        state: "Title",
+        content: {
+          "normal": "Klasik Zeka Soruları Uygulamalarından Farkları",
         },
         style: {
           fontFamily: 'Noto Sans,sans-serif',
@@ -1051,8 +1109,7 @@ export const projects = {
       {
         state: "Text",
         content: {
-          "bold": "The Imam",
-          "normal": ", geniş bir İslami kaynak koleksiyonunu vektör tabanlı arama sistemi ile indeksleyen, kullanıcı sorularına kaynak göstererek cevap veren bir AI asistanı. Uygulama, Kuran-ı Kerim, Tefsir kitapları, Fıkıh eserleri ve diğer önemli İslami kaynakları içeren kapsamlı bir veritabanına sahiptir. OpenAI embeddings, ChromaDB ve LangChain/LangGraph gibi modern AI araçları kullanılarak geliştirilmiştir."
+          "normal": "Çoğu zeka soruları uygulaması, kullanıcıya sorular sorar ve doğru cevabı bekler. Basit, tek boyutlu bir deneyim. Nexora Math ise farklı bir yaklaşım benimsiyor:"
         },
         style: {
           fontFamily: 'Noto Sans,sans-serif',
@@ -1060,48 +1117,27 @@ export const projects = {
           color: 'var(--text-color)',
         }
       },
-
-      {
-        state: "Title",
-        content: {
-          "normal": "Ana Özellikler",
-        },
-        style: {
-          fontFamily: 'Noto Sans,sans-serif',
-          fontSize: '2rem',
-          color: 'var(--text-color)',
-          marginTop: "1.4rem"
-        }
-      },
-
+      // List
       {
         state: "list",
         content: {
           "items": [
             {
               "type": "normal",
-              "content": "🤖 AI Destekli Sohbet: Kullanıcı sorularına Kuran, tefsir, fıkıh ve diğer İslami kaynaklardan cevap veren akıllı asistan"
+              "content": "1. Yapay Zeka Rakip Sistemi: Geleneksel uygulamalarda kullanıcı tek başınadır. Nexora Math'te ise kullanıcı, gerçekçi davranışlar sergileyen bir yapay zeka botu ile rekabet eder. Bu bot, sadece soruları çözmekle kalmaz; düşünür, hata yapar, bazen yavaşlar ve bazen hızlanır. İnsan gibi davranır."
             },
             {
               "type": "normal",
-              "content": "📚 Kaynak Gösterimi: Her cevap için ilgili sure ve ayet referansları"
+              "content": "2. Seviye Bazlı İlerleme: 100 seviyeden oluşan klasik mod, kullanıcıları adım adım ileriye taşır. Her seviye, önceki seviyelerde geliştirilen problem çözme becerilerinin üzerine inşa edilir. Bu, sadece bir oyun mekaniği değil; zihinsel gelişim için doğru bir yaklaşımdır."
             },
             {
               "type": "normal",
-              "content": "🔍 Semantic Search: Anlama dayalı vektör araması ile en ilgili içerikleri bulma"
+              "content": "3. Çoklu Oyun Modları: Klasik mod, bot modu, günlük bulmaca... Her mod, farklı bir antrenman stiline hitap eder. Bazı kullanıcılar rekabetçi ortamda daha iyi performans gösterirken, bazıları kendi hızlarında ilerlemeyi tercih eder."
             },
             {
               "type": "normal",
-              "content": "💬 Sohbet Geçmişi: Kullanıcı konuşmalarını MySQL veritabanında kaydetme ve yönetme"
+              "content": "4. IQ ve İlerleme Takibi: Kullanıcıların performansı, IQ puanı olarak ölçülür ve takip edilir. Bu, sadece bir skor değil; kullanıcının problem çözme yeteneklerinin ve zihinsel gelişiminin somut bir göstergesidir."
             },
-            {
-              "type": "normal",
-              "content": "🔐 JWT Authentication: Token tabanlı güvenli kullanıcı kimlik doğrulama"
-            },
-            {
-              "type": "normal",
-              "content": "📱 Modern Mobil Arayüz: Flutter ile geliştirilmiş kullanıcı dostu tasarım"
-            }
           ]
         },
         style: {
@@ -1111,159 +1147,65 @@ export const projects = {
           marginLeft: '40px',
         }
       },
-      
-      // Line
-      {
-        state: "line",
-        style: {
-          width: '100%',
-          height: '1px',
-          backgroundColor: 'var(--text-color)',
-          marginTop: '1.4rem',
-          marginBottom: '1.4rem',
-        }
-      },
-
-      {
-        state: "image",
-        content: [
-          nexoraMath4,
-          nexoraMath5,
-          nexoraMath7,
-        ],
-        style: {
-          display: 'flex',
-          justifyContent: 'center',
-          margin: '1.4rem 0',
-          gap: '3rem',
-        },
-        image_style: {
-          width: '250px',
-          objectFit: 'cover',
-          borderRadius: '10px',
-        },
-      },
-
-      // Line
-      {
-        state: "line",
-        style: {
-          width: '100%',
-          height: '1px',
-          backgroundColor: 'var(--text-color)',
-          marginTop: '1.4rem',
-          marginBottom: '1.4rem',
-        }
-      },
-
       // Title
       {
         state: "Title",
         content: {
-          "normal": " Nasıl Çalışıyor?",
+          "normal": "Oyun Mekanikleri ve Zeka Unsurları",
         },
         style: {
           fontFamily: 'Noto Sans,sans-serif',
           fontSize: '2rem',
-          color: 'var(--text-color)',
-          marginTop: "1.4rem"
-        }
-      },
-
-      {
-        state: "Text",
-        content: [
-          {
-            "type": "normal",
-            "content": "The Imam, iki ana parçadan oluşuyor: "
-          },
-          {
-            "type": "bold",
-            "content": "mobil uygulama"
-          },
-          {
-            "type": "normal",
-            "content": " (Flutter ile geliştirildi) ve "
-          },
-          {
-            "type": "bold",
-            "content": "sunucu tarafı "
-          },
-          {
-            "type": "normal",
-            "content": "(Python ile yazıldı)."
-          },
-        ],
-        style: {
-          fontFamily: 'Noto Sans,sans-serif',
-          fontSize: '1rem',
+          marginTop: '1.4rem',
           color: 'var(--text-color)',
         }
       },
-
       {
         state: "Title",
         content: {
-          "normal": "Sunucu Tarafı (Backend)",
+          "normal": "Yapay Zeka Rakip Mantığı",
         },
         style: {
           fontFamily: 'Noto Sans,sans-serif',
-          fontSize: '2rem',
-          color: 'var(--text-color)',
-          marginTop: "1.4rem"
+          fontSize: '1.5rem',
+          marginTop: '1.4rem',
+          color: '#455a64',
         }
       },
-
+      // Text Tek
       {
         state: "Text",
-        content: [
-          {
-            "type": "normal",
-            "content": "Backend, "
-          },
-          {
-            "type": "bold",
-            "content": "Python"
-          },
-          {
-            "type": "normal",
-            "content": " ve"
-          },
-          {
-            "type": "bold",
-            "content": " FastAPI"
-          },
-          {
-            "type": "normal",
-            "content": " framework'ü ile geliştirildi. Sistem, kullanıcı sorularını alıp, İslami kaynaklarda arama yapıyor ve cevapları hazırlıyor. Temel olarak şu adımları izliyor:"
-          },
-        ],
+        content: {
+          "normal": "Nexora Math'in en ilginç özelliklerinden biri, yapay zeka destekli bot sistemidir. Ancak bu bot, ChatGPT gibi her soruyu anında çözen bir sistem değil. Aksine, gerçekçi bir rakip olarak tasarlandı."
+        },
         style: {
           fontFamily: 'Noto Sans,sans-serif',
           fontSize: '1rem',
           color: 'var(--text-color)',
         }
       },
-
+      // Title
+      {
+        state: "Title",
+        content: {
+          "normal": "Zorluk Seviyesine Göre Performans",
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1.5rem',
+          marginTop: '.6rem',
+          color: 'var(--text-color)',
+        }
+      },
+      // Text Tek
+      
       {
         state: "list",
         content: {
           "items": [
             {
               "type": "normal",
-              "content": "Vektörleştirme (Embedding): Tüm İslami metinler (Kuran, tefsir, fıkıh vb.) OpenAI'nin text-embedding-3-large modeli kullanılarak vektörlere dönüştürülüyor. Bu işlem, metinleri sayısal değerlere çevirerek bilgisayarın anlayabileceği forma getiriyor. Uzun metinler, RecursiveCharacterTextSplitter kullanılarak yaklaşık 50,000 karakterlik parçalara bölünüyor. Bu parçalama işlemi, OpenAI'nin token limitlerini aşmamak ve daha verimli arama yapabilmek için gerekli."
-            },
-            {
-              "type": "normal",
-              "content": "Vektör Veritabanı (ChromaDB): Vektörleştirilmiş metinler, ChromaDB adı verilen özel bir vektör veritabanına kaydediliyor. Her metin parçası, hangi sure, ayet veya kitaptan geldiğini gösteren metadata ile birlikte saklanıyor."
-            },
-            {
-              "type": "normal",
-              "content": "Semantic Search (Anlama Dayalı Arama): Kullanıcı bir soru sorduğunda, sistem önce bu soruyu vektörleştiriyor, sonra ChromaDB'de cosine similarity (kosinüs benzerliği) kullanarak en ilgili 3 kaynağı buluyor. Bu arama yöntemi, geleneksel kelime eşleştirmesinden farklı olarak metinlerin anlamına da bakıyor."
-            },
-            {
-              "type": "normal",
-              "content": "LLM ile Cevap Oluşturma: Bulunan kaynaklar, GPT-4o-mini modeline context olarak gönderiliyor ve kullanıcının sorusuna uygun bir cevap oluşturuluyor. LangChain ve LangGraph kütüphaneleri, bu süreci yönetiyor ve AI agent'ın kaynakları doğru şekilde kullanmasını sağlıyor."
+              "content": "Bot'un performansı, sorunun zorluk seviyesine göre değişir. Kolay sorularda (seviye 1) bot, 30-35 saniye arasında düşünür ve çözer. Bu, gerçek bir insanın davranışına yakındır. Zor sorularda (seviye 5) ise bot, 5-10 saniye arasında çözüm bulur - ancak bu hız, sorunun zorluğu nedeniyle daha düşük başarı oranıyla dengelenir."
             }
           ]
         },
@@ -1272,106 +1214,93 @@ export const projects = {
           fontSize: '1rem',
           color: 'var(--text-color)',
           marginLeft: '40px',
-          listStyle: 'decimal',
         }
       },
-      {
-        state: "image",
-        content: [
-          nexoraMath8,
-          nexoraMath9,
-          nexoraMath10,
-        ],
-        style: {
-          display: 'flex',
-          justifyContent: 'center',
-          margin: '1.4rem 0',
-          gap: '3rem',
-        },
-        image_style: {
-          width: '250px',
-          objectFit: 'cover',
-          borderRadius: '10px',
-        },
-      },
+      // Title
       {
         state: "Title",
         content: {
-          "normal": " Mobil Uygulama (Frontend)",
+          "normal": "Gerçekçi Davranışlar",
         },
         style: {
           fontFamily: 'Noto Sans,sans-serif',
-          fontSize: '2rem',
+          fontSize: '1.5rem',
+          marginTop: '1.4rem',
           color: 'var(--text-color)',
-          marginTop: "1.4rem"
+        }
+      },
+      // Text Tek
+      
+      {
+        state: "list",
+        content: {
+          "items": [
+            {
+              "type": "normal",
+              "content": "Bot, sadece soruları çözmekle kalmaz. Düşünme sürecinde kullanıcıya mesajlar gönderir; \"Hmm, ilginç bir soru...\", \"Bir dakika, düşüneyim...\", \"Bu biraz zormuş gibi görünüyor\". Bu mesajlar, bot'un gerçekten düşündüğü hissini verir ve rekabet duygusunu artırır."
+            }
+          ]
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+          marginLeft: '40px',
+        }
+      },
+      // Title
+      {
+        state: "Title",
+        content: {
+          "normal": "Hata Yapma ve Öğrenme",
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1.5rem',
+          marginTop: '1.4rem',
+          color: 'var(--text-color)',
+        }
+      },
+    
+      {
+        state: "list",
+        content: {
+          "items": [
+            {
+              "type": "normal",
+              "content": "Bot, her zaman mükemmel değildir. Zor sorularda hata yapabilir ve bu hatalar, kullanıcıya \"Ben de hata yapabilirim, bu normal\" mesajını verir. Bu, problem çözme sürecinde önemli bir psikolojik faktördür ve kullanıcıların hatalarından öğrenmesini destekler."
+            }
+          ]
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+          marginLeft: '40px',
+        }
+      },
+      // Title
+      {
+        state: "Title",
+        content: {
+          "normal": "Hız Farkı ve Tepkiler",
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1.5rem',
+          marginTop: '1.4rem',
+          color: 'var(--text-color)',
         }
       },
       
-      {
-        state: "Text",
-        content: [
-          {
-            "type": "normal",
-            "content": "Mobil uygulama, "
-          },
-          {
-            "type": "bold",
-            "content": "Flutter "
-          },
-          {
-            "type": "normal",
-            "content": "framework'ü ile geliştirildi. "
-          },
-          {
-            "type": "bold",
-            "content": "Dart "
-          },
-          {
-            "type": "normal",
-            "content": "programlama dili kullanılarak yazıldı ve"
-          },
-          {
-            "type": "bold",
-            "content": " Material Design 3 "
-          },
-          {
-            "type": "normal",
-            "content": "prensiplerine uygun olarak tasarlandı. Uygulama, "
-          },
-          {
-            "type": "bold",
-            "content": "RESTful API "
-          },
-          {
-            "type": "normal",
-            "content": "ile backend ile iletişim kuruyor. Kullanıcılar:"
-          },
-        ],
-        style: {
-          fontFamily: 'Noto Sans,sans-serif',
-          fontSize: '1rem',
-          color: 'var(--text-color)',
-        }
-      },
+      // List
       {
         state: "list",
         content: {
           "items": [
             {
               "type": "normal",
-              "content": "Sorularını yazabiliyor"
-            },
-            {
-              "type": "normal",
-              "content": "Cevapları anlık olarak alabiliyor"
-            },
-            {
-              "type": "normal",
-              "content": "Kaynak linklerine tıklayarak ilgili bölümlere gidebiliyor"
-            },
-            {
-              "type": "normal",
-              "content": "SharedPreferences ile yerel olarak saklanan önceki konuşmalarını görebiliyor"
+              "content": "Bot'un çözüm hızı, sorunun zorluğuna ve bot'un \"ruh haline\" göre değişir. Bazen hızlı çözer ve kullanıcıyı zorlar, bazen yavaşlar ve kullanıcıya fırsat verir. Bu dinamik denge, oyunu her zaman ilginç tutar."
             }
           ]
         },
@@ -1380,76 +1309,246 @@ export const projects = {
           fontSize: '1rem',
           color: 'var(--text-color)',
           marginLeft: '40px',
-        }
-      },
-      {
-        state: "line",
-        style: {
-          width: '100%',
-          height: '1px',
-          backgroundColor: 'var(--text-color)',
-          marginTop: '1.4rem',
-          marginBottom: '1.4rem',
         }
       },
       {
         state: "Title",
         content: {
-          "normal": " RAG Pipeline: İşleyiş Süreci",
+          "normal": "Rekabet Duygusunu Artıran Unsurlar",
         },
         style: {
           fontFamily: 'Noto Sans,sans-serif',
-          fontSize: '2rem',
-          color: 'var(--text-color)',
-          marginTop: "1.4rem"
+          fontSize: '1.5rem',
+          marginTop: '1.4rem',
+          color: '#455a64',
         }
       },
-      {
-        state: "Text",
-        content: [
-          {
-            "type": "normal",
-            "content": "Sistem, "
-          },
-          {
-            "type": "bold",
-            "content": "RAG (Retrieval Augmented Generation) "
-          },
-          {
-            "type": "normal",
-            "content": "yaklaşımını kullanarak çalışıyor. Bu süreç şu adımlardan oluşuyor:"
-          }
-        ],
-        style: {
-          fontFamily: 'Noto Sans,sans-serif',
-          fontSize: '1rem',
-          color: 'var(--text-color)',
-        }
-      },
-
+      // List
       {
         state: "list",
         content: {
           "items": [
             {
               "type": "normal",
-              "content": "Indexing (İndeksleme): Tüm İslami metinler JSON formatından okunuyor, text chunking ile parçalara bölünüyor ve OpenAI embeddings API'si kullanılarak vektörleştiriliyor. Her chunk için metadata (sure numarası, ayet numaraları, kaynak bilgisi) saklanıyor."
+              "content": "Lider Tablosu: Global ve yerel lider tabloları, kullanıcıları sürekli olarak motive eder. Kendi performansınızı diğer kullanıcılarla karşılaştırabilir, hedefler belirleyebilirsiniz."
             },
             {
               "type": "normal",
-              "content": "Query Processing: Kullanıcı sorduğunda, soru da aynı şekilde vektörleştiriliyor."
+              "content": "XP ve Elmas Sistemi: Her başarılı çözüm, XP (deneyim puanı) kazandırır. Elmaslar ise ipuçları ve özel özellikler için kullanılır. Bu oyun içi ekonomi, kullanıcıları daha fazla oynamaya teşvik eder."
             },
             {
               "type": "normal",
-              "content": "Retrieval: ChromaDB'de similarity search yapılarak en ilgili 3 doküman bulunuyor. Bu işlem, cosine similarity metriği kullanılarak gerçekleştiriliyor."
+              "content": "Seviye Kilitleme: Yüksek seviyelere ulaşmak için belirli bir IQ seviyesine ulaşmanız gerekir. Bu, kullanıcıları daha fazla pratik yapmaya ve kendilerini geliştirmeye teşvik eder."
+            },
+          ]
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+          marginLeft: '40px',
+        }
+      },
+      // Title
+      {
+        state: "Title",
+        content: {
+          "normal": "Teknik Perspektif: Mimari ve Algoritmik Düşünce",
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '2rem',
+          marginTop: '1.4rem',
+          color: 'var(--text-color)',
+        }
+      },
+      // Title
+      {
+        state: "Title",
+        content: {
+          "normal": "Mimari Yaklaşım",
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1.8rem',
+          marginTop: '.6rem',
+          color: '#455a64',
+        }
+      },
+      // Text Tek
+      {
+        state: "Text",
+        content: {
+          "normal": "Nexora Math, modern yazılım mimarisi prensiplerine uygun olarak geliştirildi. Backend ve frontend tamamen ayrılmış, her biri kendi sorumluluklarına sahip."
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+      {
+        state: "Title",
+        content: {
+          "normal": "Backend: FastAPI, Python ve Langchain",
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1.5rem',
+          marginTop: '.6rem',
+          color: 'var(--text-color)',
+        }
+      },
+      // Text Tek
+      {
+        state: "Text",
+        content: {
+          "normal": "Backend için FastAPI seçmemizin nedeni, modern Python ekosisteminin gücü ve geliştirme hızıydı. FastAPI'nin asenkron desteği, otomatik API dokümantasyonu ve yüksek performansı, projeyi hızlı bir şekilde ilerletmemize olanak sağladı."
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+      // Text Tek
+      {
+        state: "Text",
+        content: {
+          "normal": "Bot servisi için Langchain kullandık. Langchain, yapay zeka modelleriyle etkileşim kurmayı kolaylaştıran güçlü bir framework'tür. Bot'un zeka sorularını çözmesi için Langchain üzerinden OpenAI API'sini entegre ettik. Bu sayede bot, soruları gerçekten analiz edebiliyor ve çözüm üretebiliyor."
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+      // Text Tek
+      {
+        state: "Text",
+        content: {
+          "normal": "Katmanlı mimari yaklaşımı benimsedik: API katmanı, servis katmanı, model katmanı ve veritabanı katmanı. Bu yapı, kodun bakımını kolaylaştırdı, test yazımını hızlandırdı ve gelecekteki geliştirmeleri mümkün kıldı."
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+      {
+        state: "Title",
+        content: {
+          "normal": "Frontend: Flutter ve Cross-Platform",
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1.5rem',
+          marginTop: '.6rem',
+          color: 'var(--text-color)',
+        }
+      },
+      // Text Tek
+      {
+        state: "Text",
+        content: {
+          "normal": "Flutter'ı seçmemizin ana nedeni, iOS ve Android için tek bir kod tabanı kullanarak hem zaman hem de kaynak tasarrufu sağlamaktı. Flutter'ın güçlü widget sistemi ve yüksek performansı, modern bir kullanıcı arayüzü oluşturmamıza olanak sağladı."
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+      {
+        state: "Title",
+        content: {
+          "normal": "Veritabanı: MySQL ve Alembic",
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1.5rem',
+          marginTop: '.6rem',
+          color: 'var(--text-color)',
+        }
+      },
+      // Text Tek
+      {
+        state: "Text",
+        content: {
+          "normal": "MySQL'i ilişkisel veritabanı olarak seçtik ve Alembic ile versiyonlu migration sistemi kurduk. Bu sayede veritabanı değişikliklerini güvenli bir şekilde yönetebildik ve proje geliştikçe şemayı güncelleyebildik."
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+        }
+      },
+      {
+        state: "Title",
+        content: {
+          "normal": "Ölçeklenebilirlik ve Genişletilebilirlik",
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1.8rem',
+          marginTop: '1.2rem',
+          color: '#455a64',
+        }
+      },
+      {
+        state: "list",
+        content: {
+          "items": [
+            {
+              "type": "normal",
+              "content": "Modüler Yapı: Nexora Math, modüler bir yapıya sahiptir. Her özellik, bağımsız bir modül olarak geliştirildi. Bu sayede yeni özellikler eklemek veya mevcut özellikleri güncellemek kolaylaştı."
             },
             {
               "type": "normal",
-              "content": "Generation: Bulunan kaynaklar, LangChain üzerinden GPT-4o-mini modeline context olarak gönderiliyor. Model, bu kaynakları kullanarak kullanıcının sorusuna cevap oluşturuyor."
+              "content": "API Tabanlı Mimari: Backend ve frontend arasındaki iletişim, RESTful API'ler üzerinden gerçekleşir. Bu sayede gelecekte web versiyonu veya başka platformlar için de aynı backend kullanılabilir."
             },
             {
               "type": "normal",
-              "content": "Response: Cevap, kaynak metadata'sı ile birlikte kullanıcıya döndürülüyor. Frontend'te, bu kaynaklar tıklanabilir linkler olarak gösteriliyor."
+              "content": "Veritabanı Versiyonlama: Alembic migration sistemi sayesinde veritabanı değişikliklerini güvenli bir şekilde yönetebiliyoruz. Bu, proje geliştikçe şemayı güncellememizi ve geri alma işlemlerini kolaylaştırıyor."
+            },
+            
+          ]
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+          marginLeft: '40px',
+        }
+      },
+      {
+        state: "Title",
+        content: {
+          "normal": "Bu Proje Geliştirilirken Neler Düşünüldü?",
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1.8rem',
+          marginTop: '1.2rem',
+          color: '#455a64',
+        }
+      },
+      // List
+      {
+        state: "list",
+        content: {
+          "items": [
+            {
+              "type": "normal",
+              "content": "Kullanıcı Deneyimi Önceliği: Her teknik karar, kullanıcı deneyimini iyileştirmek için alındı. Örneğin, bot'un gerçekçi davranışları, kullanıcıların problem çözme becerilerini daha iyi geliştirmesini sağlar. Seviye kilitleme mekanizması, kullanıcıları daha fazla pratik yapmaya teşvik eder."
+            },
+            {
+              "type": "normal",
+              "content": "Zihinsel Gelişim Psikolojisi: Oyun mekanikleri, zihinsel gelişim ve problem çözme psikolojisi prensiplerine dayanır. Seviye bazlı ilerleme, anında geri bildirim, başarı hissi... Tüm bunlar, kullanıcıların problem çözme becerilerini geliştirmek için tasarlandı."
+            },
+            {
+              "type": "normal",
+              "content": "Teknik Mükemmellik: Kod kalitesi, performans ve güvenlik her zaman ön plandaydı. Katmanlı mimari, test yazımı ve hata yönetimi, projenin teknik mükemmelliğini sağlar."
             }
           ]
         },
@@ -1458,9 +1557,68 @@ export const projects = {
           fontSize: '1rem',
           color: 'var(--text-color)',
           marginLeft: '40px',
-          listStyle: 'decimal',
         }
       },
+      // Title
+      {
+        state: "Title",
+        content: {
+          "normal": "Nexora Math'in Vizyonu",
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '2rem',
+          marginTop: '1.4rem',
+          color: 'var(--text-color)',
+        }
+      },
+      {
+        state: "Title",
+        content: {
+          "normal": "Gelecekte Eklenebilecek Özellikler",
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1.8rem',
+          marginTop: '1.2rem',
+          color: '#455a64',
+        }
+      },
+      // List
+      {
+        state: "list",
+        content: {
+          "items": [
+            {
+              "type": "normal",
+              "content": "Turnuva Sistemi: Kullanıcıların birbirleriyle yarışabileceği turnuvalar, sosyal bir boyut ekleyecek. Bu, öğrenme sürecini daha da eğlenceli hale getirecek."
+            },
+            {
+              "type": "normal",
+              "content": "Mağaza Sistemi: Oyun içi para birimi (elmas) ile ipuçları ve özel özellikler satın alma imkanı, oyun içi ekonomiyi güçlendirecek."
+            },
+            {
+              "type": "normal",
+              "content": "İlerleme Analitiği: Detaylı kullanıcı performans raporları, kullanıcıların kendilerini geliştirmelerine yardımcı olacak. Hangi konularda güçlü, hangi konularda zayıf olduklarını görebilecekler."
+            },
+            {
+              "type": "normal",
+              "content": "Sosyal Özellikler: Arkadaş ekleme, skor paylaşma gibi özellikler, topluluk oluşturulmasını sağlayacak. Öğrenme, sosyal bir deneyim haline gelecek."
+            },
+            {
+              "type": "normal",
+              "content": "Daha Fazla Oyun Modu: Hız modu, zaman yarışması gibi yeni modlar, çeşitliliği artıracak ve farklı öğrenme stillerine hitap edecek."
+            }
+          ]
+        },
+        style: {
+          fontFamily: 'Noto Sans,sans-serif',
+          fontSize: '1rem',
+          color: 'var(--text-color)',
+          marginLeft: '40px',
+        }
+      },
+
     ],
     image: nexoraMathImage,
     description: "İslam şeriati konularında kullanıcılara yardımcı olmak için geliştirilmiş modern bir mobil uygulama. Kullanıcılar İslami hukuk konularında sorular sorabilir ve detaylı cevaplar alabilirler.",
