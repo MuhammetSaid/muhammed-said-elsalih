@@ -33,18 +33,18 @@ const Projects = () => {
       title: "THE IMAM",
       description: "İslam şeriati konularında kullanıcılara yardımcı olmak için geliştirilmiş modern bir mobil uygulama. Kullanıcılar İslami hukuk konularında sorular sorabilir ve detaylı cevaplar alabilirler.",
       image: projectImage,
-      technologies: ["FastAPI", "LangChain", "Flutter", "MySQL"],
+      technologies: ["FastAPI", "LangChain", "Flutter", "MySQL", "JWT", "OpenAI"],
       link: "#",
       github: "#"
     },
     {
       id: 2,
-      title: "E-Commerce Platform",
-      description: "Modern ve kullanıcı dostu bir e-ticaret platformu. Güvenli ödeme sistemi, ürün yönetimi ve kullanıcı paneli ile tam özellikli bir alışveriş deneyimi sunar.",
+      title: "Nexora Math - Puzzle Game",
+      description: "Nexora Math, bir puzzle oyunudur. Oyun, matematik konularını içerir ve kullanıcıların matematik bilgilerini geliştirmelerine yardımcı olur.",
       image: masterImage,
-      technologies: ["FastAPI", "Flutter", "MySQL", "Canva"],
-      link: "#",
-      github: "#"
+      technologies: ["Unity", "C#", "MySQL"],
+      link: "https://play.google.com/store/apps/details?id=com.nexoramath.app",
+      github: "https://github.com/muhammedsaidelsalih/NexoraMath"
     },
     {
       id: 3,
